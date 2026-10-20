@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-default-theme="dark">
 <head>
 <meta charset="UTF-8">
+<script>
+(function(){try{var q=new URLSearchParams(location.search).get('theme');var t=(q==='light'||q==='dark')?q:(localStorage.getItem('site_theme')||document.documentElement.getAttribute('data-default-theme')||'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Di Milano Vigo — Agente inmobiliario con IA</title>
 <meta name="description" content="Agente IA 24/7 de Di Milano, constructora e inmobiliaria en Vigo: cualifica leads, agenda visitas, tasación instantánea, reformas y CRM con memoria conversacional en ES, GL y EN.">
@@ -32,6 +35,7 @@
       <a href="#crm" data-i18n="nav_crm">CRM</a>
     </nav>
     <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn theme-toggle" type="button" title="Cambiar tema" aria-label="Cambiar tema">🌙</button>
       <select id="langSelect" class="lang-select" aria-label="Idioma">
         <option value="es">ES</option><option value="gl">GL</option><option value="en">EN</option>
       </select>
