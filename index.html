@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Milano Vigo — Agente inmobiliario con IA</title>
-<meta name="description" content="Agente IA inmobiliario 24/7 para Vigo: cualifica leads, agenda visitas, tasa vivienda, estima reformas y gestiona tu CRM con memoria conversacional.">
-<meta property="og:title" content="Milano Vigo — Agente IA inmobiliario">
-<meta property="og:description" content="El agente IA que cualifica, tasa, agenda y gestiona tu CRM por ti.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0f17'/%3E%3Ctext x='32' y='42' font-family='Georgia' font-size='28' fill='%23d6a94f' text-anchor='middle'%3EMV%3C/text%3E%3C/svg%3E">
+<title>Di Milano Vigo — Agente inmobiliario con IA</title>
+<meta name="description" content="Agente IA 24/7 de Di Milano, constructora e inmobiliaria en Vigo: cualifica leads, agenda visitas, tasación instantánea, reformas y CRM con memoria conversacional en ES, GL y EN.">
+<meta property="og:title" content="Di Milano Vigo — Agente IA inmobiliario">
+<meta property="og:description" content="El agente IA de Di Milano (dimilano.es) que cualifica, tasa, agenda y gestiona tu CRM por ti.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0f17'/%3E%3Ctext x='32' y='42' font-family='Georgia' font-size='26' fill='%23d6a94f' text-anchor='middle'%3EDM%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -18,8 +18,8 @@
 <header class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="#inicio">
-      <span class="brand-mark">MV</span>
-      <span class="brand-text">MILANO<b>VIGO</b></span>
+      <span class="brand-mark">DM</span>
+      <span class="brand-text">DI&nbsp;MILANO <b>VIGO</b></span>
     </a>
     <nav class="nav-links">
       <a href="#agente" data-i18n="nav_agent">Agente IA</a>
@@ -51,6 +51,15 @@
         <a class="btn btn-gold btn-lg" href="#agente" data-i18n="cta_chat2">Probar el agente ahora</a>
         <a class="btn btn-ghost btn-lg" href="#propiedades" data-i18n="cta_props">Ver inmuebles</a>
       </div>
+      <div class="share-row" data-share-title="Di Milano • Agente IA inmobiliario en Vigo">
+        <span data-i18n="share_lbl">Comparte o copia</span>
+        <button class="share-btn" data-share="x" title="X / Twitter">𝕏</button>
+        <button class="share-btn" data-share="whatsapp" title="WhatsApp">✆</button>
+        <button class="share-btn" data-share="facebook" title="Facebook">𝐟</button>
+        <button class="share-btn" data-share="linkedin" title="LinkedIn">in</button>
+        <button class="share-btn" data-share="native" title="Más apps…">⋯</button>
+        <button class="share-btn" data-share="copy" title="Copiar enlace (luego pega con Ctrl+V)">⧉</button>
+      </div>
       <div class="stats-row">
         <div class="stat"><b class="gold">&lt;5 s</b><span data-i18n="stat1">Emparejamiento lead→vivienda</span></div>
         <div class="stat"><b class="gold">24/7</b><span data-i18n="stat2">Agente siempre activo</span></div>
@@ -81,8 +90,10 @@
           <div class="chat-avatar">MV</div>
           <div><b>Milano Agent</b><span class="dot-online" data-i18n="online">en línea · respondiendo en &lt;1 s</span></div>
           <div class="chat-tools">
-            <button id="voiceToggle" class="icon-btn" title="Leer respuestas en voz alta" aria-label="Voz">🔊</button>
-            <button id="resetChat" class="icon-btn" title="Borrar memoria" aria-label="Reiniciar">↺</button>
+            <button id="voiceToggle" class="icon-btn" title="Leer respuestas en voz alta" aria-label="Voz" data-i18n-t="t_voice">🔊</button>
+            <button id="voiceFemale" class="icon-btn" title="Voz femenina" aria-label="Voz femenina">♀</button>
+            <button id="voiceMale" class="icon-btn" title="Voz masculina" aria-label="Voz masculina">♂</button>
+            <button id="resetChat" class="icon-btn" title="Borrar memoria" aria-label="Reiniciar" data-i18n-t="t_reset">↺</button>
           </div>
         </div>
         <div id="chatLog" class="chat-log"></div>
@@ -265,23 +276,51 @@
 
 <footer class="footer">
   <div class="wrap footer-grid">
-    <div>
-      <a class="brand" href="#inicio"><span class="brand-mark">MV</span><span class="brand-text">MILANO<b>VIGO</b></span></a>
-      <p class="muted" data-i18n="foot1">Agente IA inmobiliario para el mercado de Vigo y la ría. Inspirado en lo mejor de Kasai, Kontaktu AI, Domus-IA, Zillow AI Mode, Sierra de Redfin y Claire de reAlpha.</p>
+    <div class="footer-brand">
+      <a class="brand" href="#inicio">
+        <img class="footer-logo" src="https://www.dimilano.es/img/logo%20Di%20Milano.svg" alt="Di Milano"
+             onerror="this.outerHTML='<span class=&quot;brand-mark&quot;>DM</span><span class=&quot;brand-text&quot;>DI MILANO<b>VIGO</b></span>'">
+      </a>
+      <p class="muted" data-i18n="foot_msg">Tu constructora e inmobiliaria en Vigo de confianza, te acompañamos para hacer de tus proyectos una realidad.</p>
+      <div class="footer-contact">
+        <span><b>Constructora</b> · Rúa García Olloqui 8, 36201 Vigo</span>
+        <a href="https://www.dimilano.es/contacto">info@dimilano.es</a>
+        <span><b>Inmobiliaria</b> · Praza de Compostela 32, 36201 Vigo</span>
+        <a href="https://www.dimilano.es/contacto" data-i18n="foot_cta">Contacta</a>
+      </div>
+      <div class="footer-rrss">
+        <a class="share-btn" href="https://www.instagram.com/dimilanovigo/" target="_blank" rel="noopener" title="Instagram">◎</a>
+        <a class="share-btn" href="https://www.linkedin.com/company/di-milano-vigo/" target="_blank" rel="noopener" title="LinkedIn">in</a>
+        <button class="share-btn" data-share="whatsapp" title="WhatsApp">✆</button>
+        <button class="share-btn" data-share="x" title="X">𝕏</button>
+        <button class="share-btn" data-share="copy" title="Copiar enlace">⧉</button>
+      </div>
     </div>
     <div class="footer-col">
-      <b data-i18n="foot2">Stack</b>
-      <span>Vercel · GitHub · Supabase</span>
-      <span data-i18n="foot3">100 % plan gratuito en v1.0</span>
+      <b data-i18n="f_menu">Menú</b>
+      <a href="https://www.dimilano.es/nuestros_pisos" data-i18n="f_tienda">Tienda</a>
+      <a href="https://www.dimilano.es/constructora" data-i18n="f_serv">Servicios</a>
+      <a href="https://www.dimilano.es/nosotros" data-i18n="f_nos">Sobre nosotros</a>
+      <a href="https://www.dimilano.es/contacto" data-i18n="f_contacta">Contacta</a>
     </div>
     <div class="footer-col">
-      <b data-i18n="foot4">Proyecto</b>
-      <a href="supabase/schema.sql">schema.sql</a>
-      <a href="README.md">README</a>
+      <b data-i18n="f_services">Servicios</b>
+      <a href="https://www.dimilano.es/constructora" data-i18n="f_cons">Constructora</a>
+      <a href="https://www.dimilano.es/inmobiliaria" data-i18n="f_inmo">Inmobiliaria</a>
+      <a href="https://www.dimilano.es/proyectos" data-i18n="f_port">Portafolio</a>
+      <a href="https://www.dimilano.es/valorador" data-i18n="f_valor">Valora tu inmueble</a>
+    </div>
+    <div class="footer-col">
+      <b>Legal</b>
+      <a href="https://www.dimilano.es/politica_privacidad" data-i18n="f_priv">Política de privacidad</a>
+      <a href="https://www.dimilano.es/aviso_legal" data-i18n="f_legal">Aviso legal</a>
+      <a href="https://www.dimilano.es/condiciones_contratacion" data-i18n="f_term">Términos y condiciones de uso</a>
+      <a href="https://www.dimilano.es/politica_cookies" data-i18n="f_cookies">Política de cookies</a>
     </div>
   </div>
   <div class="wrap footer-legal muted">
-    <span data-i18n="foot5">© 2026 Milano Vigo · Todas las cifras de este sitio son estimaciones orientativas, no tasación pericial.</span>
+    <span data-i18n="foot5">© 2026 Di Milano · Todas las cifras de este sitio son estimaciones orientativas del agente IA, no tasación pericial.</span>
+    <span data-i18n="foot3">Agente IA v1.0 · GitHub + Vercel + Supabase, 100 % plan gratuito</span>
   </div>
 </footer>
 

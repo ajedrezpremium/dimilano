@@ -22,7 +22,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacin
 .nav-inner{display:flex;align-items:center;gap:22px;height:68px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.14em;font-size:.86rem}
 .brand-mark{display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--line);border-radius:10px;color:var(--gold);font-family:var(--serif);font-size:.9rem;background:linear-gradient(160deg,#141d2f,#0d121d)}
-.brand-text b{color:var(--gold)}
+.brand-text b{color:var(--gold);margin-left:7px}
 .nav-links{display:flex;gap:20px;margin-left:8px;font-size:.9rem;color:var(--muted)}
 .nav-links a:hover{color:var(--gold2)}
 .nav-actions{margin-left:auto;display:flex;gap:10px;align-items:center}
@@ -204,15 +204,30 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacin
 .stage.s4{color:var(--red);border-color:rgba(248,113,113,.35)}
 .crm-actions{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
 
-/* ---------- footer ---------- */
-.footer{border-top:1px solid var(--line2);padding:52px 0 30px;background:var(--bg)}
-.footer-grid{display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:30px;margin-bottom:26px}
-.footer-col{display:grid;gap:6px;font-size:.85rem;color:var(--muted)}
-.footer-col b{color:var(--ink)}
-.footer-col a:hover{color:var(--gold2)}
-.footer-legal{font-size:.72rem;padding-top:8px;border-top:1px solid var(--line2)}
+/* ---------- share & copy ---------- */
+.share-row{display:flex;align-items:center;gap:8px;margin-top:18px;flex-wrap:wrap}
+.share-row>span{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.share-btn{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--panel);border:1px solid var(--line2);color:var(--muted);font-size:.9rem;cursor:pointer;transition:.15s;text-decoration:none}
+.share-btn:hover{color:var(--gold2);border-color:var(--gold);transform:translateY(-2px)}
+.copy-btn{background:none;border:1px solid var(--line2);color:var(--muted);border-radius:8px;width:26px;height:26px;cursor:pointer;font-size:.78rem;opacity:0;transition:.15s}
+.bubble{position:relative}
+.bubble:hover .copy-btn{opacity:1}
+.copy-btn:hover{color:var(--gold2);border-color:var(--gold)}
+.bubble .copy-btn{position:absolute;right:-34px;top:4px}
+.bubble.user .copy-btn{right:auto;left:-34px}
 
-/* ---------- modal & toast ---------- */
+/* ---------- footer oficial ---------- */
+.footer{border-top:1px solid var(--line2);padding:52px 0 30px;background:var(--bg)}
+.footer-grid{display:grid;grid-template-columns:1.35fr .7fr .7fr .9fr;gap:34px;margin-bottom:26px}
+.footer-logo{height:34px;width:auto;opacity:.9;margin-bottom:12px}
+.footer-brand p{max-width:44ch}
+.footer-contact{display:grid;gap:4px;font-size:.8rem;margin-top:14px;color:var(--muted)}
+.footer-contact b{color:var(--gold2);font-weight:600}
+.footer-contact a:hover{color:var(--gold2)}
+.footer-rrss{display:flex;gap:8px;margin-top:16px}
+.footer-legal{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.72rem;padding-top:8px;border-top:1px solid var(--line2)}
+#chatInput{min-width:0}
+
 .modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:rgba(5,8,14,.7);backdrop-filter:blur(6px)}
 .modal[hidden]{display:none}
 .modal-card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:28px;width:min(92vw,460px);position:relative;animation:pop .25s ease}
@@ -233,7 +248,12 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacin
   .stats-row{grid-template-columns:repeat(2,1fr)}
   .crm-stats{grid-template-columns:repeat(2,1fr)}
   .nav-links{display:none}
-  .footer-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
   .ref-est .form-grid{grid-template-columns:1fr}
   .nl-search{flex-wrap:wrap}
+}
+@media (max-width:560px){
+  .footer-grid{grid-template-columns:1fr}
+  .stats-row{grid-template-columns:1fr 1fr}
+  .bubble .copy-btn,.bubble.user .copy-btn{position:static;opacity:.6;margin-top:8px;display:inline-block}
 }

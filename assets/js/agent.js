@@ -65,6 +65,7 @@ window.MV_AGENT = (function () {
   }
   function detectIntent(t) {
     if (/visita|agendar|enseñame|ensename|verlo|ver el piso|ver los pisos|cuando puedo ver|puedo ver/.test(t)) return "visit";
+    if (/llamar|llamada|telefono|whatsapp|correo|email|contacto|contactar|contactame|quien eres|oficina|direccion/.test(t)) return "contact";
     if (/cuanto vale|cuanto vale mi|tasar|tasacion|valor de mi|pon mi|quiero vender|vender mi|soy propietario/.test(t)) return "sell";
     if (/gastos|impuesto|itp|notaria|registro|hipoteca|financiac|prestamo|cuanto cuesta comprar/.test(t)) return "costs";
     if (/reform|obra de reforma|renovar|cuanto cuesta reformar/.test(t)) return "renov";
@@ -167,9 +168,9 @@ window.MV_AGENT = (function () {
 
   /* ---------- idioma ---------- */
   const TT = {
-    es:{ back:"Me tienes en la memoria: ", ask_role:"¿Te toca comprar, alquilar o vender? Dime tu situación y arrancamos de una." },
-    gl:{ back:"Lembrote: ", ask_role:"Técalo comprar, alugar ou vender? Dime a túa situación e arrincamos." },
-    en:{ back:"I remember you: ", ask_role:"Buying, renting or selling? Tell me your situation and we start right away." }
+    es:{ back:"Me tienes en la memoria: ", hello:"Soy Milano, el agente IA de Di Milano 🤵 24/7: técnico, comercial y administrativo.\nTrabajo con el mercado de Vigo y su ría. ¿Qué te trae por aquí?" },
+    gl:{ back:"Lembrote: ", hello:"Son Milano, o axente IA de Di Milano 🤵 24/7: técnico, comercial e administrativo.\nTraballo co mercado de Vigo e a súa ría. Que te trae por aquí?" },
+    en:{ back:"I remember you: ", hello:"I'm Milano, Di Milano's AI agent 🤵 24/7: technical, commercial and administrative.\nI work the Vigo market and its estuary. What brings you here?" }
   };
   const L = () => TT[P.lang] || TT.es;
 
@@ -206,14 +207,21 @@ window.MV_AGENT = (function () {
     if (rooms !== null && intent === "sell") P.propRooms = rooms;
     if (/con ascensor/.test(t) && intent === "sell") P.propAsc = true;
 
-    /* saludo / memoria */
+    /* manandles a hola / memoria */
     if (first && intent === "other") {
-      add("Soy tu agente de Milano Vigo 🤵 24/7: técnico, comercial y administrativo.\nTrabajo con el mercado de Vigo y su ría. ¿Qué te trae por aquí?");
+      add(L().hello);
       add("", { chips: ["Busco piso para comprar", "Quiero vender mi piso", "¿Cuánto valdría mi piso?", "Gastos de compraventa en Vigo", "¿Qué recuerdas de mí?"] });
       return finish(replies, actions, t);
     }
+    if (intent === "contact") {
+      const B = window.MV_BRAND || {};
+      add("Constructora: Rúa García Olloqui 8, 36201 Vigo · " + (B.telDisplay || "986 90 90 10") + " · " + (B.emailGeneral || "info@dimilano.es") + "\nInmobiliaria: Praza de Compostela 32, 36201 Vigo · " + (B.emailInmo || "inmobiliaria@dimilano.es") + "\nYo me encargo del resto: cualifícate aquí y mi equipo te llama.");
+      actions.push({ type: "contact", tel: B.telRaw || "+34986909010", email: B.emailInmo || "inmobiliaria@dimilano.es", site: B.site || "https://www.dimilano.es/contacto" });
+      add("", { chips: ["Busco piso para comprar", "Quiero vender mi piso"] });
+      return finish(replies, actions, t);
+    }
     if (intent === "greet" || (first && intent === "other")) {
-      add("¡Hola! ¿Qué buscas hoy — comprar, alquilar o vender?");
+      add(L().hello.split("\n").slice(-1)[0] + "\n¿Qué buscas hoy — comprar, alquilar o vender?");
       return finish(replies, actions, t);
     }
     if (intent === "memory") {

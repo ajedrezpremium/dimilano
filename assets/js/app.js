@@ -43,6 +43,11 @@
       crm_mode:"Modo demo · localStorage", crm1:"Leads captados", crm2:"Leads calientes (score > 70)", crm3:"Visitas agendadas", crm4:"Pipeline estimado",
       crm_t1:"Lead", crm_t2:"Rol", crm_t3:"Presupuesto", crm_t4:"Zonas", crm_t5:"Etapa", crm_t6:"Próxima acción",
       crm_seed:"Cargar leads demo", crm_clear:"Vaciar CRM", crm_export:"Exportar CSV",
+      share_lbl:"Comparte o copia", copied:"¡Copiado! Ya puedes pegarlo con Ctrl+V", shared:"Compartiendo…",
+      foot_msg:"Tu constructora e inmobiliaria en Vigo de confianza, te acompañamos para hacer de tus proyectos una realidad.",
+      foot_cta:"Contacta", f_menu:"Menú", f_tienda:"Tienda", f_serv:"Servicios", f_nos:"Sobre nosotros", f_contacta:"Contacta",
+      f_services:"Servicios", f_cons:"Constructora", f_inmo:"Inmobiliaria", f_port:"Portafolio", f_valor:"Valora tu inmueble",
+      f_priv:"Política de privacidad", f_legal:"Aviso legal", f_term:"Términos y condiciones de uso", f_cookies:"Política de cookies",
       tas_t:"Tasación exprés", tas_zone:"Zona", tas_m2:"M² construidos", tas_rooms:"Habitaciones", tas_year:"Año de construcción", tas_cond:"Estado",
       cond1:"Para reformar", cond2:"Bien conservado", cond3:"Reformado recientemente", tas_asc:"Tiene ascensor", tas_btn:"Tasar ahora",
       tas_res_t:"Resultado", tas_empty:"Rellena el formulario y pulsa “Tasar ahora”.",
@@ -54,9 +59,7 @@
       online:"en línea · respondiendo en <1 s", send:"Enviar", search:"Buscar", confirm:"Confirmar visita",
       ph_chat:"Escribe: “busco piso 2 hab en Bouzas menos de 160k con ascensor”",
       ph_nl:"“ático reformado frente a la ría con vistas, presupuesto 170k”", ph_name:"Tu nombre", ph_phone:"Móvil / WhatsApp",
-      foot1:"Agente IA inmobiliario para el mercado de Vigo y la ría. Inspirado en lo mejor de Kasai, Kontaktu AI, Domus-IA, Zillow AI Mode, Sierra de Redfin y Claire de reAlpha.",
-      foot2:"Stack", foot3:"100 % plan gratuito en v1.0", foot4:"Proyecto",
-      foot5:"© 2026 Milano Vigo · Todas las cifras de este sitio son estimaciones orientativas, no tasación pericial."
+      foot5:"© 2026 Di Milano · Todas las cifras de este sitio son estimaciones orientativas del agente IA, no tasación pericial."
     },
     en: {
       nav_agent:"AI Agent", nav_props:"Properties", nav_tas:"Valuation", nav_merc:"Market", nav_crm:"CRM",
@@ -90,6 +93,11 @@
       crm_mode:"Demo mode · localStorage", crm1:"Leads captured", crm2:"Hot leads (score > 70)", crm3:"Viewings booked", crm4:"Estimated pipeline",
       crm_t1:"Lead", crm_t2:"Role", crm_t3:"Budget", crm_t4:"Zones", crm_t5:"Stage", crm_t6:"Next action",
       crm_seed:"Load demo leads", crm_clear:"Clear CRM", crm_export:"Export CSV",
+      share_lbl:"Share or copy", copied:"Copied! Now paste it with Ctrl+V", shared:"Sharing…",
+      foot_msg:"Your trusted construction and real-estate company in Vigo: we walk with you to turn your projects into reality.",
+      foot_cta:"Contact", f_menu:"Menu", f_tienda:"Shop", f_serv:"Services", f_nos:"About us", f_contacta:"Contact",
+      f_services:"Services", f_cons:"Construction", f_inmo:"Real estate", f_port:"Portfolio", f_valor:"Value your property",
+      f_priv:"Privacy policy", f_legal:"Legal notice", f_term:"Terms & conditions of use", f_cookies:"Cookie policy",
       tas_t:"Express valuation", tas_zone:"Zone", tas_m2:"Built m²", tas_rooms:"Bedrooms", tas_year:"Year built", tas_cond:"Condition",
       cond1:"To renovate", cond2:"Well kept", cond3:"Recently renovated", tas_asc:"Has lift", tas_btn:"Value it now",
       tas_res_t:"Result", tas_empty:"Fill the form and press “Value it now”.",
@@ -101,9 +109,7 @@
       online:"online · replying in <1 s", send:"Send", search:"Search", confirm:"Confirm viewing",
       ph_chat:"Type: “2-bed flat in Bouzas under 160k with lift”",
       ph_nl:"“renovated attic facing the estuary with views, budget 170k”", ph_name:"Your name", ph_phone:"Mobile / WhatsApp",
-      foot1:"AI real-estate agent for the Vigo market. Inspired by the best of Kasai, Kontaktu AI, Domus-IA, Zillow AI Mode, Redfin's Sierra and reAlpha's Claire.",
-      foot2:"Stack", foot3:"100% free tier in v1.0", foot4:"Project",
-      foot5:"© 2026 Milano Vigo · All figures on this site are orientative estimates, not sworn appraisals."
+      foot5:"© 2026 Di Milano · All figures on this site are orientative AI-agent estimates, not sworn appraisals."
     },
     gl: {
       nav_agent:"Axente IA", nav_props:"Propiedades", nav_tas:"Tasación", nav_merc:"Mercado", nav_crm:"CRM",
@@ -137,6 +143,11 @@
       crm_mode:"Modo demo · localStorage", crm1:"Leads captados", crm2:"Leads quentes (score > 70)", crm3:"Visitas agendadas", crm4:"Pipeine estimado",
       crm_t1:"Lead", crm_t2:"Rol", crm_t3:"Orzamento", crm_t4:"Zonas", crm_t5:"Etapa", crm_t6:"Próxima acción",
       crm_seed:"Cargar leads demo", crm_clear:"Baleirar CRM", crm_export:"Exportar CSV",
+      share_lbl:"Comparte ou copia", copied:"Copiado! Agora pégao con Ctrl+V", shared:"Compartindo…",
+      foot_msg:"A túa construtora e inmobiliaria de confianza en Vigo: acompañámoste para facer dos teus proxectos unha realidade.",
+      foot_cta:"Contacta", f_menu:"Menú", f_tienda:"Tenda", f_serv:"Servizos", f_nos:"Sobre nós", f_contacta:"Contacta",
+      f_services:"Servizos", f_cons:"Construtora", f_inmo:"Inmobiliaria", f_port:"Portafolio", f_valor:"Valora o teu inmoble",
+      f_priv:"Política de privacidade", f_legal:"Aviso legal", f_term:"Termos e condicións de uso", f_cookies:"Política de cookies",
       tas_t:"Tasación exprés", tas_zone:"Zona", tas_m2:"M² construídos", tas_rooms:"Dormitorios", tas_year:"Ano de construción", tas_cond:"Estado",
       cond1:"Para reformar", cond2:"Bo conservado", cond3:"Reformado hai pouco", tas_asc:"Ten ascensor", tas_btn:"Tasar agora",
       tas_res_t:"Resultado", tas_empty:"Enche o formulario e preme “Tasar agora”.",
@@ -148,9 +159,7 @@
       online:"en liña · responde en <1 s", send:"Enviar", search:"Buscar", confirm:"Confirmar visita",
       ph_chat:"Escribe: “busco piso 2 hab en Bouzas por menos de 160k con ascensor”",
       ph_nl:"“ático reformado fronte á ría con vistas, orzamento 170k”", ph_name:"O teu nome", ph_phone:"Móbil / WhatsApp",
-      foot1:"Axente IA inmobiliario para o mercado de Vigo e a ría. Inspirado no mellor de Kasai, Kontaktu AI, Domus-IA, Zillow AI Mode, Sierra de Redfin e Claire de reAlpha.",
-      foot2:"Stack", foot3:"100 % plan gratuito na v1.0", foot4:"Proxecto",
-      foot5:"© 2026 Milano Vigo · Todalas cifras deste sitio son estimacións orientativas, non tasación pericial."
+      foot5:"© 2026 Di Milano · Todalas cifras deste sitio son estimacións orientativas do axente IA, non tasación pericial."
     }
   };
   function applyLang() {
@@ -182,6 +191,10 @@
     div.textContent = text;
     if (meta && meta.chips) {/* chips se renderizan fuera */}
     log.appendChild(div);
+    const cp = document.createElement("button");
+    cp.className = "copy-btn"; cp.type = "button"; cp.title = "Copiar"; cp.textContent = "⧉";
+    cp.dataset.raw = text;
+    div.appendChild(cp);
     if (meta && meta.time) {
       const sm = document.createElement("small");
       sm.textContent = meta.time;
@@ -203,20 +216,46 @@
       box.appendChild(b);
     });
   }
+  /* ---------- cerebro LLM (OpenRouter vía /api/chat) con fallback al motor local ---------- */
+  async function cloudChat(text, profile) {
+    try {
+      const hist = S().getConversation().slice(-8);
+      const r = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ lang: LANG, message: text, profile, history: hist })
+      });
+      if (!r.ok) return null;
+      const j = await r.json();
+      return j && j.text ? j.text : null;
+    } catch (e) { return null; } // sin Vercel serverless → motor local
+  }
+
   async function sendChat(text) {
     if (!text.trim()) return;
     bubble(text, "user");
-    S().pushMessage({ role: "user", text });
     $("chatInput").value = "";
     typing(true);
     try {
       const r = await A().respond(text);
-      await new Promise(res => setTimeout(res, 450));
+      const cloud = await cloudChat(text, { lang: LANG, role: r.profile.role, budget_max: r.profile.budget_max, rooms: r.profile.rooms, zones: r.profile.zones, name: r.profile.name, phone: r.profile.phone });
+      await new Promise(res => setTimeout(res, cloud ? 250 : 450));
       typing(false);
-      (r.replies || []).forEach((rp, i) => {
-        if (rp.text) bubble(rp.text, "bot", { time: i === 0 && r.score >= 70 ? ["⚡ lead caliente · score " + r.score + "/100"] : null });
-        if (rp.meta && rp.meta.chips) renderChips(rp.meta.chips);
-      });
+      S().pushMessage({ role: "user", text, leadId: r.profile.lead && r.profile.lead.cloudId ? r.profile.lead.cloudId : (r.profile.lead || {}).id });
+      if (cloud) {
+        bubble(cloud, "bot");
+        if (speechEnabled) speak(cloud);
+        (r.replies || []).forEach(rp => { if (rp.meta && rp.meta.chips) renderChips(rp.meta.chips); });
+      } else {
+        (r.replies || []).forEach((rp, i) => {
+          if (rp.text) bubble(rp.text, "bot", { time: i === 0 && r.score >= 70 ? ["⚡ lead caliente · score " + r.score + "/100"] : null });
+          if (rp.meta && rp.meta.chips) renderChips(rp.meta.chips);
+        });
+        if (speechEnabled) {
+          const last = [...(r.replies || [])].reverse().find(x => x.text);
+          if (last) speak(last.text);
+        }
+      }
       lastProfile = r.profile;
       updateMemory(r);
       r.actions.forEach(a => { handleAction(a); });
@@ -262,6 +301,8 @@
   function handleAction(a) {
     if (a.type === "properties" && a.ids && a.ids.length) {
       renderProps({ onlyIds: a.ids });
+      const top = D().PROPS.find(p => p.id === a.ids[0]);
+      if (top) shareData = { text: "Match de Di Milano: " + top.title + " (" + eur(top.price) + ", Vigo)", url: (window.MV_BRAND || {}).site + "/nuestros_pisos" };
       const sec = $("propiedades"); sec.scrollIntoView({ behavior: "smooth" });
     } else if (a.type === "scheduler") {
       openScheduler(a.propId);
@@ -293,10 +334,15 @@
         '<div class="prop-body"><div class="prop-zone">' + z.name + '</div><h3>' + p.title + '</h3>' +
         '<div class="prop-meta"><span>' + (p.rooms === 0 ? "Estudio" : p.rooms + " hab") + '</span><span>' + p.m2 + ' m²</span><span>' + p.year + '</span><span>' + (p.elevator ? "ascensor" : "sin ascensor") + '</span></div>' +
         '<div class="prop-price">' + eur(p.price) + ' <small>· ' + eur(p.price / p.m2) + '/m² · alquiler ~' + eur(p.m2 * z.rentM2) + '/mes</small></div>' +
-        '<div class="prop-actions"><button class="btn btn-gold btn-sm" data-visit="' + p.id + '">Agendar visita</button><a class="btn btn-ghost btn-sm" href="#agente">Pedir análisis</a></div></div>';
+        '<div class="prop-actions"><button class="btn btn-gold btn-sm" data-visit="' + p.id + '">Agendar visita</button><a class="btn btn-ghost btn-sm" href="#agente">Pedir análisis</a><button class="share-btn sm" data-share="x" data-prop="' + p.id + '" title="Compartir/X y copiar">↗</button></div></div>';
       grid.appendChild(card);
     });
     grid.querySelectorAll("[data-visit]").forEach(b => b.onclick = () => openScheduler(b.getAttribute("data-visit")));
+    grid.querySelectorAll("[data-prop]").forEach(b => b.onclick = () => {
+      const p = D().PROPS.find(x => x.id === b.getAttribute("data-prop"));
+      const txt = p ? p.title + " · " + eur(p.price) + " · " + (D().ZONES.find(z => z.id === p.zone) || {}).name + " · Di Milano Vigo" : "";
+      doShare("native", txt, (window.MV_BRAND || {}).site + "/nuestros_pisos");
+    });
   }
 
   /* ---------- NL search ---------- */
@@ -356,6 +402,7 @@
       "</table>" +
       '<p class="note">⚠️ Estimación orientativa del agente (no tasación pericial). Facilita informes medianos al conocer nota registral, estado real y vista.</p>';
     toast("Tasación en tu ficha del CRM · generada en " + Math.round(80 + Math.random() * 120) + " ms");
+    shareData = { text: "Tasación IA Di Milano: mi piso en " + v.zone + " vale ~" + eur(v.mid) + " (" + eur(v.baseM2) + "/m²)", url: (window.MV_BRAND || {}).site + "/valorador" };
   }
   function doReform(ev) {
     ev.preventDefault();
@@ -474,11 +521,85 @@
     const t = $("toast"); t.textContent = txt; t.hidden = false;
     clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 3600);
   }
+
+  /* ---------- voz TTS (femenina / masculina) y STT ---------- */
+  let voicePref = localStorage.getItem("mv_voiceGender") || "f"; // f | m | off
+  const FEMALE_HINTS = /monica|monika|mónica|sabina|estrella|helena|laura|isidora|elvira|esperanza|female|samantha|victoria|allison|ava|zira|sonia|libby|karen|female|emma|partutá|luciana|ximena|iulia|amelie|amelía|milena|paulina|female|zoila/i;
+  const MALE_HINTS  = /pablo|gustavo|diego|álvaro|alvaro|jorge|male|alex|daniel|fred|tom|male|juan|rasmus|male|stefan|carlos|homme/i;
+  function pickVoice(lang) {
+    const vs = (window.speechSynthesis && speechSynthesis.getVoices() || []).filter(v =>
+      v.lang.toLowerCase().startsWith(lang.slice(0, 2)) || (lang === "gl" && v.lang.toLowerCase().startsWith("es")));
+    if (!vs.length) return null;
+    const wantF = voicePref === "f";
+    const hit = vs.find(v => wantF ? FEMALE_HINTS.test(v.name) : MALE_HINTS.test(v.name));
+    return hit || vs[0];
+  }
   function speak(text) {
-    if (!window.speechSynthesis || !speechEnabled) return;
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = { es: "es-ES", gl: "es-ES", en: "en-US" }[LANG] || "es-ES";
-    window.speechSynthesis.speak(u);
+    if (!window.speechSynthesis || voicePref === "off" || !speechEnabled) return;
+    try { speechSynthesis.cancel(); } catch (e) {}
+    const clean = text.replace(/⚠️|·|—/g, " ").replace(/\n+/g, ". ").replace(/[·—⚠️]/g, "").slice(0, 420);
+    const u = new SpeechSynthesisUtterance(clean);
+    const v = pickVoice(LANG);
+    if (v) u.voice = v;
+    u.lang = { es: "es-ES", gl: "gl-ES", en: "en-US" }[LANG] || "es-ES";
+    if (v) u.lang = v.lang;
+    u.rate = 1.02; u.pitch = voicePref === "m" ? 0.92 : 1.08;
+    speechSynthesis.speak(u);
+  }
+  function setVoicePref(g) {
+    voicePref = g; localStorage.setItem("mv_voiceGender", g);
+    if (g !== "off" && !speechEnabled) { speechEnabled = true; }
+    speechEnabled = voicePref === "off" ? false : true;
+    $("voiceToggle").style.borderColor = speechEnabled ? "var(--gold)" : "";
+    if (!speechEnabled && window.speechSynthesis) { try { speechSynthesis.cancel(); } catch (e) {} }
+    if (speechEnabled) { const B = window.MV_BRAND || {}; speak((voicePref === "m" ? "Voz masculina activada. " : "Voz femenina activada. ") + (B.name || "Di Milano")); }
+    toast("Voz: " + (g === "f" ? "femenina ♀" : g === "m" ? "masculina ♂" : "silencio"));
+  }
+  if (window.speechSynthesis) speechSynthesis.addEventListener && speechSynthesis.addEventListener("voiceschanged", () => { pickVoice(LANG); });
+
+  /* ---------- compartir · RRSS · copiar ---------- */
+  function shareUrl(kind, text, url) {
+    const t = encodeURIComponent(text), u = encodeURIComponent(url);
+    switch (kind) {
+      case "x": return "https://twitter.com/intent/tweet?text=" + t + "&url=" + u;
+      case "whatsapp": return "https://wa.me/?text=" + t + "%20" + u;
+      case "facebook": return "https://www.facebook.com/sharer/sharer.php?u=" + u + "&quote=" + t;
+      case "linkedin": return "https://www.linkedin.com/sharing/share-offsite/?url=" + u;
+      default: return null;
+    }
+  }
+  async function doShare(kind, text, url) {
+    text = text || ((window.MV_BRAND || {}).name || "Di Milano") + " · Agente IA inmobiliario en Vigo";
+    url = url || (window.location.href.split("#")[0]);
+    if (kind === "copy") {
+      try { await navigator.clipboard.writeText(text + " → " + url); }
+      catch (e) { fallbackCopy(text + " → " + url); }
+      toast((I18N[LANG] || I18N.es).copied);
+      return;
+    }
+    if (kind === "native" && navigator.share) {
+      try { await navigator.share({ title: "Di Milano", text, url }); toast((I18N[LANG] || I18N.es).shared); } catch (e) { /* cancelado */ }
+      return;
+    }
+    const link = kind === "native"
+      ? null
+      : shareUrl(kind, text, url);
+    if (link) window.open(link, "_blank", "noopener,width=640,height=560");
+    else if (kind === "native") doShare("copy", text, url);
+  }
+  function fallbackCopy(txt) {
+    const ta = document.createElement("textarea");
+    ta.value = txt; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); } catch (e) {}
+    ta.remove();
+  }
+  let shareData = null;
+  function bindShareButtons() {
+    document.querySelectorAll("[data-share]").forEach(b => {
+      if (b.hasAttribute("data-prop")) return; // las tarjetas comparten su ficha
+      b.onclick = () => doShare(b.dataset.share, (shareData || {}).text, (shareData || {}).url);
+    });
   }
 
   /* ---------- init ---------- */
@@ -505,7 +626,21 @@
     else bubble("Te presento tu agente de Milano Vigo. Pregúntame por tasación, pisos, gastos en Galicia o reformas — o dime directamente lo que buscas.", "bot");
     updateMemory({ profile: prof, score: prof.score || 0, scoreLabel: prof.score >= 70 ? "HOT · lead caliente" : prof.score >= 45 ? "WARM · tibio" : "COLD · aún frío", actions: [] });
     $("resetChat").onclick = async () => { A().reset(); $("chatLog").innerHTML = ""; $("memList").innerHTML = ""; $("scoreVal").textContent = "—"; $("scoreBar").style.width = "0%"; renderChips(["Busco piso para comprar", "Quiero vender mi piso", "¿Cuánto valdría mi piso?"]); toast("Memoria borrada"); };
-    $("voiceToggle").onclick = () => { speechEnabled = !speechEnabled; toast("Voz del agente: " + (speechEnabled ? "activada 🔊" : "silencio 🤫")); if (speechEnabled) speak("Agente Milano Vigo activado."); };
+    $("voiceToggle").onclick = () => setVoicePref(voicePref === "off" ? "f" : "off");
+    $("voiceFemale").onclick = () => setVoicePref("f");
+    $("voiceMale").onclick = () => setVoicePref("m");
+    $("voiceToggle").style.borderColor = (voicePref !== "off") ? "var(--gold)" : "";
+    speechEnabled = voicePref !== "off";
+    // copiar de burbujas (copiar → pegar con Ctrl+V)
+    $("chatLog").addEventListener("click", e => {
+      const b = e.target.closest(".copy-btn");
+      if (!b) return;
+      const txt = b.dataset.raw || "";
+      (navigator.clipboard && navigator.clipboard.writeText(txt) ? navigator.clipboard.writeText(txt) : Promise.reject())
+        .then(() => toast((I18N[LANG] || I18N.es).copied))
+        .catch(() => { fallbackCopy(txt); toast((I18N[LANG] || I18N.es).copied); });
+    });
+    bindShareButtons();
     $("chatForm").addEventListener("submit", e => { e.preventDefault(); sendChat($("chatInput").value); });
     $("nlForm").addEventListener("submit", e => { e.preventDefault(); nlSearch($("nlInput").value); });
     $("tasForm").addEventListener("submit", doValuation);

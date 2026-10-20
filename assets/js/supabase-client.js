@@ -20,18 +20,14 @@ window.MV_STORE = (function () {
   return {
     MODE: { get: () => mode, display: () => mode === "supabase" ? "Supabase conectado" : "Modo demo · localStorage" },
     blankLead: baseLeadFactory,
-    async getProfile() {
-      return cloud(async c => (await c.from("mv_profiles").select("*").limit(1)).data?.[0] || jget(LS.P, null), [], () => jget(LS.P, null));
-    },
-    async saveProfile(p) {
-      jset(LS.P, p);
-      return cloud(async c => { const { data } = await c.from("mv_profiles").update({ ...p, id: p.cloudId }).eq("id", p.cloudId || 0); return data; }, [p], () => true);
-    },
+    async saveProfile(p) { jset(LS.P, p); return true; },
+    getProfile: () => jget(LS.P, null),
     getConversation: () => jget(LS.C, []),
     pushMessage(m) {
       const C = jget(LS.C, []); C.push({ role: m.role, text: m.text, ts: Date.now() }); jset(LS.C, C.slice(-60));
-      if (m.role === "user") cloud(async c => { const r = await c.from("mv_leads").select("id").limit(1).maybeSingle();
-        if (r && r.data) await c.from("mv_messages").insert({ lead_id: r.data.id, role: m.role, text: m.text }); }, [], ()=>{});
+      const lid = m.leadId || "";
+      if (m.role === "user" && lid && client) client.from("mv_messages").insert({ lead_id: lid, role: m.role, text: m.text })
+        .then(({ error }) => { if (error) console.warn("[MV] msg →", error.message); });
     },
     resetConversation() { localStorage.removeItem(LS.C); localStorage.removeItem(LS.P); },
     async getLeads() {
@@ -48,9 +44,9 @@ window.MV_STORE = (function () {
       jset(LS.L, local.slice(0, 50));
       if (client) try {
         const row = { id: lead.id, name: lead.name, role: lead.role, budget_max: lead.budget_max, rooms: lead.rooms, zones: lead.zones, phone: lead.phone, email: lead.email, stage: lead.stage, score: lead.score, next_action: lead.next_action, lang: lead.lang };
-        const { error } = await client.from("mv_leads").upsert(row);
-        if (error) console.warn("[MV] lead upsert →", error.message);
-      } catch (e) { console.warn("[MV] lead →", e.message); }
+        const { error } = await client.from("mv_leads").insert(row);
+        if (error && error.code !== "23505") console.warn("[MV] lead →", error.message); // 23505 = ya guardado
+      } catch (e) { /* offline */ }
       return lead;
     },
     clearLocal() { localStorage.removeItem(LS.L); localStorage.removeItem(LS.C); localStorage.removeItem(LS.P); },
