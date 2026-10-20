@@ -719,3 +719,6 @@ document.querySelectorAll('.map-toggle').forEach(function(btn){btn.addEventListe
 
 /* ---------- TEMA CLARO/OSCURO ---------- */
 (function(){var root=document.documentElement;var btn=document.getElementById('themeToggle');function paint(){if(!btn)return;var dark=root.getAttribute('data-theme')==='dark';btn.textContent=dark?'☀️':'🌙';btn.title=dark?'Cambiar a tema claro':'Cambiar a tema oscuro';btn.setAttribute('aria-label',btn.title);}if(btn){paint();btn.addEventListener('click',function(){var next=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',next);try{localStorage.setItem('site_theme',next);}catch(e){}paint();});}})();
+
+/* Modo embebido: evitar duplicar botones flotantes */
+if (window.self !== window.top) { document.documentElement.classList.add('po-embedded'); }

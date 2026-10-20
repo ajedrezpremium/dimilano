@@ -300,3 +300,5 @@ html[data-theme=light] .memory-card,
 html[data-theme=light] .prop-card,
 html[data-theme=light] .form-card,
 html[data-theme=light] .float-card{box-shadow:0 12px 28px rgba(70,52,18,.10)}
+
+.po-embedded .wa-float{display:none!important}
