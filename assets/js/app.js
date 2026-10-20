@@ -699,7 +699,8 @@ document.querySelectorAll('.map-toggle').forEach(function(btn){btn.addEventListe
 
 /* WhatsApp flotante + continuar desde el chat */
 (function () {
-  var n = waNumber();
+  var b = window.MV_BRAND || {};
+  var n = String(b.whatsapp || b.telRaw || "").replace(/\D/g, "");
   if (!n) return;
   var f = document.getElementById('waFloat');
   if (f) f.href = 'https://wa.me/' + n + '?text=' + encodeURIComponent('Hola, vengo de la web de Di Milano. Quiero información y agendar una visita.');
@@ -718,7 +719,40 @@ document.querySelectorAll('.map-toggle').forEach(function(btn){btn.addEventListe
 })();
 
 /* ---------- TEMA CLARO/OSCURO ---------- */
-(function(){var root=document.documentElement;var btn=document.getElementById('themeToggle');function paint(){if(!btn)return;var dark=root.getAttribute('data-theme')==='dark';btn.textContent=dark?'☀️':'🌙';btn.title=dark?'Cambiar a tema claro':'Cambiar a tema oscuro';btn.setAttribute('aria-label',btn.title);}if(btn){paint();btn.addEventListener('click',function(){var next=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',next);try{localStorage.setItem('site_theme',next);}catch(e){}paint();});}})();
+(function () {
+  var root = document.documentElement;
+  var KEY = 'site_theme';
+
+  function paint() {
+    var btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    var dark = root.getAttribute('data-theme') === 'dark';
+    btn.textContent = dark ? '\u2600\uFE0F' : '\uD83C\uDF19';
+    btn.title = dark ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro';
+    btn.setAttribute('aria-label', btn.title);
+    btn.setAttribute('aria-pressed', dark ? 'false' : 'true');
+  }
+
+  function setTheme(t) {
+    root.setAttribute('data-theme', t);
+    try { localStorage.setItem(KEY, t); } catch (e) {}
+    paint();
+  }
+
+  document.addEventListener('click', function (e) {
+    var btn = e.target && e.target.closest ? e.target.closest('#themeToggle') : null;
+    if (!btn) return;
+    e.preventDefault();
+    setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', paint);
+  } else {
+    paint();
+  }
+})();
+
 
 /* Modo embebido: evitar duplicar botones flotantes */
 if (window.self !== window.top) { document.documentElement.classList.add('po-embedded'); }
