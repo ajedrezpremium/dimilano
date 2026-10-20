@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Milano Vigo — Agente inmobiliario con IA</title>
+<meta name="description" content="Agente IA inmobiliario 24/7 para Vigo: cualifica leads, agenda visitas, tasa vivienda, estima reformas y gestiona tu CRM con memoria conversacional.">
+<meta property="og:title" content="Milano Vigo — Agente IA inmobiliario">
+<meta property="og:description" content="El agente IA que cualifica, tasa, agenda y gestiona tu CRM por ti.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0f17'/%3E%3Ctext x='32' y='42' font-family='Georgia' font-size='28' fill='%23d6a94f' text-anchor='middle'%3EMV%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark">MV</span>
+      <span class="brand-text">MILANO<b>VIGO</b></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#agente" data-i18n="nav_agent">Agente IA</a>
+      <a href="#propiedades" data-i18n="nav_props">Propiedades</a>
+      <a href="#tasacion" data-i18n="nav_tas">Tasación</a>
+      <a href="#mercado" data-i18n="nav_merc">Mercado</a>
+      <a href="#crm" data-i18n="nav_crm">CRM</a>
+    </nav>
+    <div class="nav-actions">
+      <select id="langSelect" class="lang-select" aria-label="Idioma">
+        <option value="es">ES</option><option value="gl">GL</option><option value="en">EN</option>
+      </select>
+      <a class="btn btn-gold" href="#agente" data-i18n="cta_chat">Hablar con la IA</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="chip-row">
+        <span class="chip gold" data-i18n="hero_badge">Vigo · Ría de Pontevedra · 2026</span>
+      </div>
+      <h1 class="hero-title"><span data-i18n="hero_t1">Tu agente inmobiliario de IA</span><br>
+        <span class="gold" data-i18n="hero_t2">técnico, comercial y administrativo.</span></h1>
+      <p class="hero-sub" data-i18n="hero_sub">Cualifica compradores, agenda visitas, tasa vivienda, estima tu reforma y gestiona el CRM — con memoria conversacional, en segundos y sin dormirse jamás.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold btn-lg" href="#agente" data-i18n="cta_chat2">Probar el agente ahora</a>
+        <a class="btn btn-ghost btn-lg" href="#propiedades" data-i18n="cta_props">Ver inmuebles</a>
+      </div>
+      <div class="stats-row">
+        <div class="stat"><b class="gold">&lt;5 s</b><span data-i18n="stat1">Emparejamiento lead→vivienda</span></div>
+        <div class="stat"><b class="gold">24/7</b><span data-i18n="stat2">Agente siempre activo</span></div>
+        <div class="stat"><b class="gold">100 %</b><span data-i18n="stat3">Del flujo técnico-comercial-administrativo</span></div>
+        <div class="stat"><b class="gold">ES·GL·EN</b><span data-i18n="stat4">Español, galego, inglés (+ roadmap 35 idiomas)</span></div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="ai-orb"></div>
+      <div class="float-card fc1"><b>Bouzas · 3 hab</b><span>Match 94 % · 148 ms</span></div>
+      <div class="float-card fc2"><b data-i18n="fc2_t">Visita agendada</b><span data-i18n="fc2_s">Jueves 17:30 · Casco Vello</span></div>
+      <div class="float-card fc3"><b data-i18n="fc3_t">Lead cualificado</b><span data-i18n="fc3_s">Score 82 / 100 · Presupuesto 165 k€</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENTE -->
+<section id="agente" class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-i18n="sec1_k">01 · El agente</span>
+      <h2 data-i18n="sec1_h">Habla con él. Te recuerda, te cualifica, te empareja.</h2>
+      <p class="sec-sub" data-i18n="sec1_sub">Compórtate como un comprador o vendedor real: el agente extrae presupuesto, zonas, plazos y financiación del lenguaje natural, guarda la memoria en tu navegador y la escribe en el CRM en vivo.</p>
+    </div>
+    <div class="agent-grid">
+      <div class="chat-card">
+        <div class="chat-top">
+          <div class="chat-avatar">MV</div>
+          <div><b>Milano Agent</b><span class="dot-online" data-i18n="online">en línea · respondiendo en &lt;1 s</span></div>
+          <div class="chat-tools">
+            <button id="voiceToggle" class="icon-btn" title="Leer respuestas en voz alta" aria-label="Voz">🔊</button>
+            <button id="resetChat" class="icon-btn" title="Borrar memoria" aria-label="Reiniciar">↺</button>
+          </div>
+        </div>
+        <div id="chatLog" class="chat-log"></div>
+        <div id="chips" class="chip-list"></div>
+        <form id="chatForm" class="chat-input-row">
+          <button type="button" id="micBtn" class="icon-btn mic" title="Hablar (voz)" aria-label="Micrófono" hidden>🎙</button>
+          <input id="chatInput" type="text" autocomplete="off" data-i18n-ph="ph_chat" placeholder="Escribe: “busco piso 2 hab en Bouzas menos de 160k con ascensor”">
+          <button id="sendBtn" class="btn btn-gold" data-i18n="send">Enviar</button>
+        </form>
+      </div>
+      <aside class="memory-card">
+        <h3 data-i18n="mem_title">Memoria viva del agente</h3>
+        <p class="mem-sub" data-i18n="mem_sub">Lo que ya sabe de ti —se guarda y se escribe al CRM en tiempo real.</p>
+        <ul id="memList" class="mem-list"></ul>
+        <div class="score-box">
+          <div class="score-head"><span data-i18n="score">Nivel de cualificación</span><b id="scoreVal">—</b></div>
+          <div class="score-bar"><i id="scoreBar"></i></div>
+          <div id="scoreLabel" class="score-label" data-i18n="score_empty">Aún frío · sigue conversando</div>
+        </div>
+        <div id="matchBox" class="match-box" hidden>
+          <div class="match-head"><b data-i18n="match_t">Matching en milisegundos</b><span id="matchTime"></span></div>
+          <p id="matchWhy" class="match-why"></p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- PROPIEDADES Búsqueda conversacional Zillow-style -->
+<section id="propiedades" class="section alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-i18n="sec2_k">02 · Búsqueda conversacional</span>
+      <h2 data-i18n="sec2_h">Busca en lenguaje natural, no con filtros.</h2>
+      <p class="sec-sub" data-i18n="sec2_sub">Zillow-style: escribe lo que quieres y el motor lo analiza, filtra y explica por qué te encaja cada inmueble.</p>
+    </div>
+    <form id="nlForm" class="nl-search">
+      <span class="nl-icon">✦</span>
+      <input id="nlInput" type="text" data-i18n-ph="ph_nl" placeholder="“ático reformado frente a la ría con vistas, presupuesto 170k”">
+      <button class="btn btn-gold" data-i18n="search">Buscar</button>
+    </form>
+    <div id="nlResult" class="nl-result"></div>
+    <div id="propGrid" class="prop-grid"></div>
+  </div>
+</section>
+
+<!-- TASACIÓN + REFORMAS -->
+<section id="tasacion" class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-i18n="sec3_k">03 · Tasación instantánea + reformas</span>
+      <h2 data-i18n="sec3_h">¿Cuánto vale tu piso? ¿Y su techo reformado?</h2>
+      <p class="sec-sub" data-i18n="sec3_sub">Valoración por barrio con rango de confianza y, como Zillow AI Mode, coste estimado de tu reforma antes de llamar a nadie.</p>
+    </div>
+    <div class="tas-grid">
+      <form id="tasForm" class="tas-card">
+        <h3 data-i18n="tas_t">Tasación exprés</h3>
+        <div class="form-grid">
+          <label data-i18n="tas_zone">Zona<select id="tasZone"></select></label>
+          <label data-i18n="tas_m2">M² construidos<input id="tasM2" type="number" min="20" max="400" value="75"></label>
+          <label data-i18n="tas_rooms">Habitaciones<input id="tasRooms" type="number" min="0" max="6" value="3"></label>
+          <label data-i18n="tas_year">Año de construcción<input id="tasYear" type="number" min="1850" max="2026" value="1985"></label>
+          <label data-i18n="tas_cond">Estado<select id="tasCond">
+            <option value="reformar" data-i18n="cond1">Para reformar</option>
+            <option value="bueno" selected data-i18n="cond2">Bien conservado</option>
+            <option value="reformado" data-i18n="cond3">Reformado recientemente</option>
+          </select></label>
+          <label class="inline"><input id="tasAsc" type="checkbox" checked> <span data-i18n="tas_asc">Tiene ascensor</span></label>
+        </div>
+        <button class="btn btn-gold btn-block" data-i18n="tas_btn">Tasar ahora</button>
+      </form>
+      <div class="tas-card result-card">
+        <h3 data-i18n="tas_res_t">Resultado</h3>
+        <div id="tasOut">
+          <p class="muted" data-i18n="tas_empty">Rellena el formulario y pulsa “Tasar ahora”.</p>
+        </div>
+      </div>
+    </div>
+    <form id="refForm" class="ref-est">
+      <h3 data-i18n="ref_t">Estimador de reforma</h3>
+      <p class="muted" data-i18n="ref_s">Cuanta superficie quieres reformar y qué. Ideal para comprar bajo y subir el valor.</p>
+      <div class="form-grid">
+        <label data-i18n="ref_m2">M² a reformar<input id="refM2" type="number" min="10" max="400" value="75"></label>
+        <label data-i18n="ref_level">Alcance<select id="refLevel">
+          <option value="lavado" data-i18n="ref1">Lavado de cara (pintura, suelo)</option>
+          <option value="integral" selected data-i18n="ref2">Reforma integral</option>
+          <option value="premium" data-i18n="ref3">Integral premium (cocina, baños, climatización)</option>
+        </select></label>
+        <label data-i18n="ref_zone">Zona (para valorar plusvalía)<select id="refZoneEst"></select></label>
+      </div>
+      <button class="btn btn-ghost btn-block" data-i18n="ref_btn">Estimar coste y retorno</button>
+      <div id="refOut"></div>
+    </form>
+  </div>
+</section>
+
+<!-- MERCADO -->
+<section id="mercado" class="section alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-i18n="sec4_k">04 · Radar de mercado</span>
+      <h2 data-i18n="sec4_h">Vigo por barrios: precio, alquiler y tendencia.</h2>
+      <p class="sec-sub" data-i18n="sec4_sub">Estimaciones orientativas por zona: la IA no inventa cifras exactas — las acota y avisa antes de que inviertas.</p>
+    </div>
+    <div id="zoneGrid" class="zone-grid"></div>
+  </div>
+</section>
+
+<!-- SERVICIOS: 3 roles -->
+<section id="servicios" class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-i18n="sec5_k">05 · Un agente, tres cerebros</span>
+      <h2 data-i18n="sec5_h">Técnico. Comercial. Administrativo.</h2>
+    </div>
+    <div class="roles-grid">
+      <article class="role-card">
+        <div class="role-ico">⚙️</div>
+        <h3 data-i18n="role1_t">Técnico</h3>
+        <ul>
+          <li data-i18n="role1_a">Inspección técnica digital de fichas: antigüedad, eficiencia energética, ITE, ascensor, barreras.</li>
+          <li data-i18n="role1_b">Plan de obra: reformas por m², costes y viabilidad de cada proyecto.</li>
+          <li data-i18n="role1_c">Revisión documental: notas simples, cargas, deudas y estatutos de comunidad.</li>
+        </ul>
+      </article>
+      <article class="role-card featured">
+        <div class="role-ico">⚡</div>
+        <h3 data-i18n="role2_t">Comercial</h3>
+        <ul>
+          <li data-i18n="role2_a">Cualificación de leads: presupuesto, zona, plazo, financiación, motivo.</li>
+          <li data-i18n="role2_b">Matching &lt;5 s a inventario y contraofertas basadas en datos.</li>
+          <li data-i18n="role2_c">Copy de anuncios para Idealista, Fotocasa y Habitaclia, con la memoria del comprador.</li>
+        </ul>
+      </article>
+      <article class="role-card">
+        <div class="role-ico">🗂️</div>
+        <h3 data-i18n="role3_t">Administrativo</h3>
+        <ul>
+          <li data-i18n="role3_a">CRM en vivo: pipeline, etapas, score y próxima acción.</li>
+          <li data-i18n="role3_b">Gastos de Galicia: ITP 10 % (Pontevedra), notaría, registro, gestoría.</li>
+          <li data-i18n="role3_c">Agenda de visitas, recordatorios y seguimiento post-visita automático.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CRM -->
+<section id="crm" class="section alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-i18n="sec6_k">06 · CRM administrativo</span>
+      <h2 data-i18n="sec6_h">Todo lo que el agente conversa, acaba en el pipeline.</h2>
+      <p class="sec-sub" data-i18n="sec6_sub">Demo local en v1.0 (localStorage); al conectar Supabase, cada conversación escribe directamente en tu base de datos.</p>
+      <span class="pill" data-i18n="crm_mode" id="dbMode">Modo demo · localStorage</span>
+    </div>
+    <div class="crm-stats">
+      <div class="crm-stat"><b id="crmLeads">0</b><span data-i18n="crm1">Leads captados</span></div>
+      <div class="crm-stat"><b id="crmHot">0</b><span data-i18n="crm2">Leads calientes (/100)</span></div>
+      <div class="crm-stat"><b id="crmVisits">0</b><span data-i18n="crm3">Visitas agendadas</span></div>
+      <div class="crm-stat"><b id="crmValue">0 €</b><span data-i18n="crm4">Pipeline estimado</span></div>
+    </div>
+    <div class="crm-table-wrap">
+      <table class="crm-table">
+        <thead><tr>
+          <th data-i18n="crm_t1">Lead</th><th data-i18n="crm_t2">Rol</th><th>Score</th>
+          <th data-i18n="crm_t3">Presupuesto</th><th data-i18n="crm_t4">Zonas</th>
+          <th data-i18n="crm_t5">Etapa</th><th data-i18n="crm_t6">Próxima acción</th>
+        </tr></thead>
+        <tbody id="crmBody"></tbody>
+      </table>
+    </div>
+    <div class="crm-actions">
+      <button id="crmSeed" class="btn btn-ghost btn-sm" data-i18n="crm_seed">Cargar leads demo</button>
+      <button id="crmClear" class="btn btn-ghost btn-sm" data-i18n="crm_clear">Vaciar CRM</button>
+      <a id="crmExport" class="btn btn-ghost btn-sm" download="milano-crm.csv" href="#" data-i18n="crm_export">Exportar CSV</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brand" href="#inicio"><span class="brand-mark">MV</span><span class="brand-text">MILANO<b>VIGO</b></span></a>
+      <p class="muted" data-i18n="foot1">Agente IA inmobiliario para el mercado de Vigo y la ría. Inspirado en lo mejor de Kasai, Kontaktu AI, Domus-IA, Zillow AI Mode, Sierra de Redfin y Claire de reAlpha.</p>
+    </div>
+    <div class="footer-col">
+      <b data-i18n="foot2">Stack</b>
+      <span>Vercel · GitHub · Supabase</span>
+      <span data-i18n="foot3">100 % plan gratuito en v1.0</span>
+    </div>
+    <div class="footer-col">
+      <b data-i18n="foot4">Proyecto</b>
+      <a href="supabase/schema.sql">schema.sql</a>
+      <a href="README.md">README</a>
+    </div>
+  </div>
+  <div class="wrap footer-legal muted">
+    <span data-i18n="foot5">© 2026 Milano Vigo · Todas las cifras de este sitio son estimaciones orientativas, no tasación pericial.</span>
+  </div>
+</footer>
+
+<!-- Modal visitas -->
+<div id="modal" class="modal" hidden>
+  <div class="modal-card">
+    <button id="modalClose" class="icon-btn modal-x" aria-label="Cerrar">✕</button>
+    <h3 id="modalTitle">Agendar visita</h3>
+    <p id="modalProp" class="muted"></p>
+    <div id="slotList" class="slot-list"></div>
+    <div class="slot-confirm" id="slotConfirm" hidden>
+      <p id="slotConfirmText"></p>
+      <div class="form-grid">
+        <input id="visitName" data-i18n-ph="ph_name" placeholder="Tu nombre">
+        <input id="visitPhone" data-i18n-ph="ph_phone" placeholder="Móvil / WhatsApp">
+      </div>
+      <button id="visitConfirmBtn" class="btn btn-gold btn-block" data-i18n="confirm">Confirmar visita</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.1/dist/umd/supabase.min.js" defer></script>
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/data.js" defer></script>
+<script src="assets/js/supabase-client.js" defer></script>
+<script src="assets/js/agent.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
