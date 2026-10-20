@@ -13,6 +13,7 @@ window.MV_BRAND = {
   logo: "https://www.dimilano.es/img/logo%20Di%20Milano.svg",
   telDisplay: "986 90 90 10",
   telRaw: "+34986909010",
+  whatsapp: "+34986909010", // confirmar número de WhatsApp Business
   emailGeneral: "info@dimilano.es",
   emailInmo: "inmobiliaria@dimilano.es",
   instagram: "https://www.instagram.com/dimilanovigo/",

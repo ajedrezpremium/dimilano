@@ -310,6 +310,18 @@
   }
 
   /* ---------- propiedades ---------- */
+  /* WhatsApp: enlace contextual */
+  function waNumber() {
+    const b = window.MV_BRAND || {};
+    return String(b.whatsapp || b.telRaw || '').replace(/\D/g, '');
+  }
+  function waLink(p) {
+    const z = p ? D().ZONES.find(x => x.id === p.zone) : null;
+    const txt = p
+      ? 'Hola, vengo de la web de Di Milano. Me interesa "' + p.title + '" (' + eur(p.price) + ', ' + (z ? z.name : '') + '). Quiero agendar una visita.'
+      : 'Hola, vengo de la web de Di Milano. Quiero información y agendar una visita.';
+    return 'https://wa.me/' + waNumber() + '?text=' + encodeURIComponent(txt);
+  }
   async function renderProps(filter) {
     const props = D().PROPS;
     const grid = $("propGrid"); grid.innerHTML = "";
@@ -334,7 +346,7 @@
         '<div class="prop-body"><div class="prop-zone">' + z.name + '</div><h3>' + p.title + '</h3>' +
         '<div class="prop-meta"><span>' + (p.rooms === 0 ? "Estudio" : p.rooms + " hab") + '</span><span>' + p.m2 + ' m²</span><span>' + p.year + '</span><span>' + (p.elevator ? "ascensor" : "sin ascensor") + '</span></div>' +
         '<div class="prop-price">' + eur(p.price) + ' <small>· ' + eur(p.price / p.m2) + '/m² · alquiler ~' + eur(p.m2 * z.rentM2) + '/mes</small></div>' +
-        '<div class="prop-actions"><button class="btn btn-gold btn-sm" data-visit="' + p.id + '">Agendar visita</button><a class="btn btn-ghost btn-sm" href="#agente">Pedir análisis</a><button class="share-btn sm" data-share="x" data-prop="' + p.id + '" title="Compartir/X y copiar">↗</button></div></div>';
+        '<div class="prop-actions"><button class="btn btn-gold btn-sm" data-visit="' + p.id + '">Agendar visita</button><a class="btn btn-ghost btn-sm" href="' + waLink(p) + '" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn-ghost btn-sm" href="#agente">Pedir análisis</a><button class="share-btn sm" data-share="x" data-prop="' + p.id + '" title="Compartir/X y copiar">↗</button></div></div>';
       grid.appendChild(card);
     });
     grid.querySelectorAll("[data-visit]").forEach(b => b.onclick = () => openScheduler(b.getAttribute("data-visit")));
@@ -684,3 +696,24 @@
 
 /* Mapa bajo demanda (sin cargar Google hasta el clic) */
 document.querySelectorAll('.map-toggle').forEach(function(btn){btn.addEventListener('click',function(){var wrap=btn.nextElementSibling;if(!wrap)return;if(wrap.hidden){if(!wrap.querySelector('iframe')){var iframe=document.createElement('iframe');iframe.src=btn.dataset.map;iframe.loading='lazy';iframe.title='Mapa de la sede';iframe.style.width='100%';iframe.style.height='220px';iframe.style.border='0';iframe.style.borderRadius='12px';wrap.appendChild(iframe);}wrap.hidden=false;btn.textContent='🗺 Ocultar mapa';}else{wrap.hidden=true;btn.textContent='🗺 Ver mapa';}});});
+
+/* WhatsApp flotante + continuar desde el chat */
+(function () {
+  var n = waNumber();
+  if (!n) return;
+  var f = document.getElementById('waFloat');
+  if (f) f.href = 'https://wa.me/' + n + '?text=' + encodeURIComponent('Hola, vengo de la web de Di Milano. Quiero información y agendar una visita.');
+  var c = document.getElementById('waChat');
+  if (c) {
+    c.href = 'https://wa.me/' + n;
+    c.addEventListener('click', function (e) {
+      e.preventDefault();
+      var log = document.getElementById('chatLog');
+      var msgs = log ? log.querySelectorAll('.msg.user, .user, [data-role=user]') : [];
+      var last = msgs.length ? msgs[msgs.length - 1].innerText.trim() : '';
+      var txt = 'Hola, vengo de la web de Di Milano. Quiero agendar una visita.' + (last ? ' Contexto: ' + last : '');
+      window.open('https://wa.me/' + n + '?text=' + encodeURIComponent(txt), '_blank');
+    });
+  }
+})();
+
