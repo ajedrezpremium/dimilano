@@ -1,0 +1,13 @@
+.env
+.env.local
+.git
+.gitignore
+.vercel
+marketing/
+data/
+scripts/
+PLAN_DEMO_V1.0.md
+README.md
+DIMILANO_IA.md
+*.log
+node_modules

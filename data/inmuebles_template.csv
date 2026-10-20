@@ -1,0 +1,4 @@
+id,title,zone,rooms,m2,price,year,condition,elevator,features,description,rent_estimate
+mv-101,"Piso reformado en Bouzas con terraza",bouzas,2,72,165000,2005,reformado,true,"Terraza|Ascensor|Cocina equipada","Exterior luminoso a 5 minutos de la playa.",750
+mv-102,"Ático en el Casco Vello",cascovello,2,68,158000,2019,reformado,false,"Vistas a la ría|Última planta","Última planta rehabilitada en pleno Casco Vello.",720
+mv-103,"Piso familiar en Coia",coia,3,95,185000,1998,bueno,true,"Garaje|Ascensor|Trastero","Zona tranquila con colegios y transporte.",850

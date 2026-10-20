@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Di Milano — Agente IA inmobiliario · Demo</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Inter', -apple-system, Segoe UI, Roboto, sans-serif; color: #1a1a1a; background: #fff; }
+  .page { width: 210mm; min-height: 297mm; padding: 18mm 16mm; page-break-after: always; position: relative; }
+  .page:last-child { page-break-after: auto; }
+  .brand { display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #d6a94f; padding-bottom: 10px; margin-bottom: 18px; }
+  .brand h1 { font-family: Georgia, serif; font-size: 22px; margin: 0; letter-spacing: 1px; }
+  .brand span { font-size: 10px; letter-spacing: 2px; color: #8a6d2f; text-transform: uppercase; }
+  .hero-title { font-family: Georgia, serif; font-size: 30px; line-height: 1.15; margin: 0 0 10px; }
+  .hero-title b { color: #b8862f; }
+  .sub { font-size: 12px; color: #555; line-height: 1.6; margin-bottom: 16px; }
+  .shot { width: 100%; border: 1px solid #e5e1d8; border-radius: 10px; margin: 12px 0 16px; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 14px 0; }
+  .card { border: 1px solid #e8e2d5; border-radius: 10px; padding: 12px 14px; background: #fbf9f4; }
+  .card h3 { margin: 0 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #8a6d2f; }
+  .card p, .card li { font-size: 11px; color: #333; line-height: 1.55; margin: 0; }
+  .card ul { margin: 0; padding-left: 14px; }
+  h2 { font-size: 14px; letter-spacing: 1px; text-transform: uppercase; color: #8a6d2f; margin: 20px 0 8px; }
+  table { width: 100%; border-collapse: collapse; font-size: 11px; }
+  th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid #eee6d6; vertical-align: top; }
+  th { background: #f7f1e3; color: #6b5323; font-size: 10px; text-transform: uppercase; letter-spacing: .8px; }
+  .pill { display: inline-block; background: #101418; color: #fff; border-radius: 20px; padding: 3px 10px; font-size: 9px; letter-spacing: 1px; }
+  .offer { background: #101418; color: #fff; border-radius: 10px; padding: 14px 16px; margin-top: 14px; }
+  .offer h3 { margin: 0 0 6px; font-size: 14px; color: #d6a94f; font-family: Georgia, serif; }
+  .offer p { margin: 0; font-size: 11px; line-height: 1.6; color: #e8e2d5; }
+  .foot { position: absolute; bottom: 12mm; left: 16mm; right: 16mm; font-size: 9px; color: #999; border-top: 1px solid #eee; padding-top: 6px; display: flex; justify-content: space-between; }
+  .contact { font-size: 11px; color: #333; margin-top: 12px; line-height: 1.7; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="brand"><h1>DI MILANO <small style="font-size:10px;color:#8a6d2f">VIGO</small></h1><span>Agente IA inmobiliario</span></div>
+  <div class="hero-title">Tu agente inmobiliario de IA:<br><b>técnico, comercial y administrativo.</b></div>
+  <div class="sub">Cualifica compradores, agenda visitas, tasa vivienda, estima reformas y gestiona el CRM — con memoria conversacional, 24/7 y en ES / GL / EN.</div>
+  <img class="shot" src="shots/home-desktop.png" alt="Di Milano Agente IA">
+  <div class="cols">
+    <div class="card"><h3>Comprador</h3><p>Encuentra 3 inmuebles que encajan según presupuesto, zona, habitaciones y ascensor. Agenda visita en la misma conversación.</p></div>
+    <div class="card"><h3>Vendedor</h3><p>Tasación exprés con rango orientativo, comparables por barrio y renta estimada. Sin esperas.</p></div>
+    <div class="card"><h3>Reformas</h3><p>Estimación de coste por m² y tipo de reforma, con plusvalía esperada.</p></div>
+    <div class="card"><h3>CRM</h3><p>Cada lead llega con score, etapa, próxima acción y visita agendada. Nada se pierde.</p></div>
+  </div>
+  <div class="offer">
+    <h3>Piloto 30 días</h3>
+    <p>Agente + CRM + tasador instalados en vuestra web. Carga de inmuebles reales incluida. Éxito medido: <b>10 leads cualificados/mes</b> y <b>3 visitas agendadas/semana</b>. Si no se cumple, se prorroga gratis.</p>
+  </div>
+  <div class="contact">Demo: <b>https://dimilano-vigo.vercel.app</b> &nbsp;·&nbsp; Contacto: 986 90 90 10 · info@dimilano.es</div>
+  <div class="foot"><span>Di Milano · Constructora e inmobiliaria · Vigo</span><span>Documento comercial — octubre 2026</span></div>
+</div>
+
+<div class="page">
+  <div class="brand"><h1>DEMO EN 12 MINUTOS</h1><span>Guion para la reunión</span></div>
+  <table>
+    <tr><th>Min</th><th>Escena</th><th>Qué decimos / mostramos</th></tr>
+    <tr><td>1–3</td><td>Comprador</td><td>“Busco piso de 2 habitaciones en Bouzas con ascensor, hasta 160.000 €”. El agente cualifica, muestra 3 matches y ofrece visita.</td></tr>
+    <tr><td>4–5</td><td>Vendedor</td><td>“Quiero vender en Alcabre, 88 m², reformado, 1998”. Tasación exprés con rango y comparables.</td></tr>
+    <tr><td>6–7</td><td>Reforma</td><td>“Cocina de 9 m²”. Coste estimado y plusvalía.</td></tr>
+    <tr><td>8–9</td><td>CRM</td><td>El lead aparece con score, etapa y próxima acción. Agendar visita.</td></tr>
+    <tr><td>10</td><td>Mercado</td><td>Radar de precios por barrio y renta.</td></tr>
+    <tr><td>11</td><td>Idiomas</td><td>Cambio a GL / EN para cliente extranjero.</td></tr>
+    <tr><td>12</td><td>Cierre</td><td>Piloto 30 días, condiciones y siguiente paso.</td></tr>
+  </table>
+  <h2>Qué necesitamos para arrancar el piloto</h2>
+  <div class="cols">
+    <div class="card"><h3>Datos</h3><ul><li>8–12 inmuebles reales (Excel/CSV + fotos)</li><li>Teléfonos y emails oficiales</li><li>Zonas y precios de referencia</li></ul></div>
+    <div class="card"><h3>Técnico</h3><ul><li>Subdominio agente.dimilano.es (CNAME)</li><li>Crédito OpenRouter (~5–10 €)</li><li>Email de leads</li></ul></div>
+  </div>
+  <h2>Siguiente paso</h2>
+  <p style="font-size:11px;color:#333">1) Reunión de 15 min. 2) Carga de inmuebles y personalización en 48 h. 3) Piloto de 30 días con métricas semanales.</p>
+  <div class="foot"><span>Demo: https://dimilano-vigo.vercel.app</span><span>PADELORGANIZERS · soluciones IA para negocios</span></div>
+</div>
+</body>
+</html>
