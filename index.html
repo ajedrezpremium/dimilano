@@ -12,6 +12,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"HomeAndConstructionBusiness","name":"Di Milano Constructora","url":"https://www.dimilano.es/","telephone":"+34986909010","email":"info@dimilano.es","address":{"@type":"PostalAddress","streetAddress":"Rúa García Olloqui 8","postalCode":"36201","addressLocality":"Vigo","addressRegion":"Pontevedra","addressCountry":"ES"}},{"@type":"RealEstateAgent","name":"Di Milano Inmobiliaria","url":"https://www.dimilano.es/","telephone":"+34986909010","email":"inmobiliaria@dimilano.es","address":{"@type":"PostalAddress","streetAddress":"Praza de Compostela 32","postalCode":"36201","addressLocality":"Vigo","addressRegion":"Pontevedra","addressCountry":"ES"}}]}
+  </script>
 </head>
 <body>
 
@@ -283,10 +286,17 @@
       </a>
       <p class="muted" data-i18n="foot_msg">Tu constructora e inmobiliaria en Vigo de confianza, te acompañamos para hacer de tus proyectos una realidad.</p>
       <div class="footer-contact">
-        <span><b>Constructora</b> · Rúa García Olloqui 8, 36201 Vigo</span>
+        <div class="footer-sede">
+          <span><b>Constructora</b> · Rúa García Olloqui 8, 36201 Vigo</span>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=R%C3%BAa+Garc%C3%ADa+Olloqui+8%2C+36201+Vigo" target="_blank" rel="noopener">📍 Cómo llegar</a>
+        </div>
+        <div class="footer-sede">
+          <span><b>Inmobiliaria</b> · Praza de Compostela 32, 36201 Vigo</span>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Praza+de+Compostela+32%2C+36201+Vigo" target="_blank" rel="noopener">📍 Cómo llegar</a>
+        </div>
         <a href="https://www.dimilano.es/contacto">info@dimilano.es</a>
-        <span><b>Inmobiliaria</b> · Praza de Compostela 32, 36201 Vigo</span>
-        <a href="https://www.dimilano.es/contacto" data-i18n="foot_cta">Contacta</a>
+        <button type="button" class="map-toggle" data-map="https://maps.google.com/maps?q=R%C3%BAa+Garc%C3%ADa+Olloqui+8,+36201+Vigo&output=embed">🗺 Ver mapa</button>
+        <div class="map-embed" hidden></div>
       </div>
       <div class="footer-rrss">
         <a class="share-btn" href="https://www.instagram.com/dimilanovigo/" target="_blank" rel="noopener" title="Instagram">◎</a>

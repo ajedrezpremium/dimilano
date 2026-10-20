@@ -257,3 +257,11 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacin
   .stats-row{grid-template-columns:1fr 1fr}
   .bubble .copy-btn,.bubble.user .copy-btn{position:static;opacity:.6;margin-top:8px;display:inline-block}
 }
+
+
+/* Footer: sedes y mapa bajo demanda */
+.footer-sede{display:flex;flex-direction:column;gap:2px;margin-bottom:6px}
+.map-link{color:#d6a94f;font-weight:600;text-decoration:none}
+.map-link:hover{text-decoration:underline}
+.map-toggle{margin-top:8px;background:rgba(214,169,79,.12);border:1px solid rgba(214,169,79,.4);color:#d6a94f;padding:8px 12px;border-radius:10px;font-weight:700;cursor:pointer}
+.map-embed{margin-top:10px}
