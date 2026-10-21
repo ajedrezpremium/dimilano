@@ -59,7 +59,38 @@
       online:"en línea · respondiendo en <1 s", send:"Enviar", search:"Buscar", confirm:"Confirmar visita",
       ph_chat:"Escribe: “busco piso 2 hab en Bouzas menos de 160k con ascensor”",
       ph_nl:"“ático reformado frente a la ría con vistas, presupuesto 170k”", ph_name:"Tu nombre", ph_phone:"Móvil / WhatsApp",
-      foot5:"© 2026 Di Milano · Todas las cifras de este sitio son estimaciones orientativas del agente IA, no tasación pericial."
+      foot5:"© 2026 Di Milano · Todas las cifras de este sitio son estimaciones orientativas del agente IA, no tasación pericial.",
+      wa_prop:"Hola, vengo de la web de Di Milano. Me interesa “{t}” ({p}, {z}). Quiero agendar una visita.",
+      wa_gen:"Hola, vengo de la web de Di Milano. Quiero información y agendar una visita.",
+      wa_chat:"Hola, vengo de la web de Di Milano. Quiero agendar una visita.",
+      btn_visit:"Agendar visita", btn_ask:"Pedir análisis", share_t:"Compartir o copiar enlace",
+      sched_title:"Agendar visita", sched_q:"Visitamos “{p}” · {s}. ¿A qué nombre lo dejamos?",
+      need_name:"Dinos tu nombre para dejarlo agendado", visit_ok:"✅ Visita {s} — te confirmamos por WhatsApp",
+      visit_word:"Visita", s0:"Nuevo", s1:"Cualificado", s2:"Visita agendada", s3:"Oferta", s4:"Cerrado",
+      crm_empty:"Nada aún: conversa con el agente en la sección 01 y verás aquí los leads con su score en vivo.",
+      demo_toast:"Leads demo cargados",
+      d_note1:"Enviar 3 matches + agenda de visitas", d_note2:"Enviar informe de tasación por email",
+      d_note3:"Visita jueves 17:30 · para reformar Coia", d_note4:"Reconducir si pican",
+      err_int:"He tenido un fallo interno, inténtalo de nuevo 🙏",
+      m2_low:"Buen intento — jugando con m² <20. Pon algo real 🙂", m2_real:"M² reales, por favor 🙂",
+      tas_ok:"Tasación en tu ficha del CRM · generada en {ms} ms",
+      voice_f:"Voz femenina activada. ", voice_m:"Voz masculina activada. ",
+      t_voice:"Leer respuestas en voz alta", t_reset:"Borrar memoria", t_theme:"Cambiar tema",
+      t_vf:"Voz femenina", t_vm:"Voz masculina", t_mic:"Hablar (voz)",
+      sh_x:"X / Twitter", sh_wa:"WhatsApp", sh_fb:"Facebook", sh_li:"LinkedIn", sh_na:"Más apps.",
+      sh_cp:"Copiar enlace (luego pega con Ctrl+V)", sh_cp2:"Copiar enlace",
+      sh_ig:"Instagram de Di Milano", sh_in:"LinkedIn de Di Milano",
+      ref_lvl0:"Lavado de cara", ref_lvl1:"Reforma integral", ref_lvl2:"Reforma premium",
+      ref_row_new:"Nuevo valor estimado del inmueble", ref_row_uplift:"Plusvalía esperada al reformar (zona {z})",
+      ref_row_margin:"Margen estimado", ref_note:"Reformas con valor creciente en Barrio {z} (estimación orientativa).",
+      tas_range:"rango", tas_row0:"€/m² resultado", tas_row1:"Alquiler estimado", tas_row2:"Renta bruta",
+      tas_row3:"Techo tras reforma", tas_row4:"Obra estimada",
+      tas_note:"⚠️ Estimación orientativa del agente (no tasación pericial). Se afina al conocer nota registral, estado real y vistas.",
+      tas_share:"Tasación IA Di Milano: mi piso en {z} vale ~{p} ({m}/m²)",
+      nl_match:"{a}/{b} inmuebles emparejados", nl_ms:"matching <5 s garantizado", nl_filtered:"inmuebles",
+      nl_none:"Sin coincidencias — pídeselo al agente en el chat, ajusta zonas o sugerimos similares.",
+      prop_studio:"Estudio", prop_habs:"{n} hab", prop_lift:"ascensor", prop_nolift:"sin ascensor",
+      c_reformar:"Para reformar", c_bueno:"Buen estado", c_reformado:"Reformado", guest:"Invitado", hot:"⚡ lead caliente · score {s}/100", mem_name:"Nombre", mem_role:"Rol", mem_budget:"Presupuesto", mem_rooms:"Habitaciones", mem_zones:"Zonas", mem_tl:"Plazo", mem_tel:"Móvil", mem_seller:"Ficha Vendedor", why_label:"Por qué encaja: ", share_match:"Match de Di Milano: ", role_buyer:"Comprador", role_seller:"Vendedor", role_tenant:"Inquilino", mb_general:"Agente general", mb_legal:"⚖️ Legal & económico", mb_new:"NUEVO"
     },
     en: {
       nav_agent:"AI Agent", nav_props:"Properties", nav_tas:"Valuation", nav_merc:"Market", nav_crm:"CRM",
@@ -109,7 +140,38 @@
       online:"online · replying in <1 s", send:"Send", search:"Search", confirm:"Confirm viewing",
       ph_chat:"Type: “2-bed flat in Bouzas under 160k with lift”",
       ph_nl:"“renovated attic facing the estuary with views, budget 170k”", ph_name:"Your name", ph_phone:"Mobile / WhatsApp",
-      foot5:"© 2026 Di Milano · All figures on this site are orientative AI-agent estimates, not sworn appraisals."
+      foot5:"© 2026 Di Milano · All figures on this site are orientative AI-agent estimates, not sworn appraisals.",
+      wa_prop:"Hi, I'm coming from the Di Milano website. I'm interested in “{t}” ({p}, {z}). I'd like to book a viewing.",
+      wa_gen:"Hi, I'm coming from the Di Milano website. I'd like some information and to book a viewing.",
+      wa_chat:"Hi, I'm coming from the Di Milano website. I'd like to book a viewing.",
+      btn_visit:"Book a viewing", btn_ask:"Ask for analysis", share_t:"Share or copy link",
+      sched_title:"Book a viewing", sched_q:"We'll visit “{p}” · {s}. What name shall we put it under?",
+      need_name:"Tell us your name to book the slot", visit_ok:"✅ Viewing {s} — we'll confirm via WhatsApp",
+      visit_word:"Viewing", s0:"New", s1:"Qualified", s2:"Viewing booked", s3:"Offer", s4:"Closed",
+      crm_empty:"Nothing yet: chat with the agent in section 01 and you'll see leads with live scores here.",
+      demo_toast:"Demo leads loaded",
+      d_note1:"Send 3 matches + viewing schedule", d_note2:"Email the valuation report",
+      d_note3:"Viewing Thursday 17:30 · to renovate in Coia", d_note4:"Redirect if they bite",
+      err_int:"I hit an internal error, please try again 🙏",
+      m2_low:"Nice try — playing with m² <20. Give me a real number 🙂", m2_real:"Real m², please 🙂",
+      tas_ok:"Valuation saved to your CRM file · generated in {ms} ms",
+      voice_f:"Female voice on. ", voice_m:"Male voice on. ",
+      t_voice:"Read replies aloud", t_reset:"Clear memory", t_theme:"Switch theme",
+      t_vf:"Female voice", t_vm:"Male voice", t_mic:"Speak (voice)",
+      sh_x:"X / Twitter", sh_wa:"WhatsApp", sh_fb:"Facebook", sh_li:"LinkedIn", sh_na:"More apps.",
+      sh_cp:"Copy link (paste with Ctrl+V)", sh_cp2:"Copy link",
+      sh_ig:"Di Milano on Instagram", sh_in:"Di Milano on LinkedIn",
+      ref_lvl0:"Face-lift", ref_lvl1:"Full renovation", ref_lvl2:"Premium renovation",
+      ref_row_new:"New estimated property value", ref_row_uplift:"Expected uplift after works (zone {z})",
+      ref_row_margin:"Estimated margin", ref_note:"Value-adding renovations in {z} (orientative estimate).",
+      tas_range:"range", tas_row0:"€/m² result", tas_row1:"Estimated rent", tas_row2:"Gross yield",
+      tas_row3:"Renovated ceiling", tas_row4:"Estimated works",
+      tas_note:"⚠️ Agent's orientative estimate (not a formal appraisal). Refined once registry note, real condition and views are known.",
+      tas_share:"Di Milano AI valuation: my flat in {z} is worth ~{p} ({m}/m²)",
+      nl_match:"{a}/{b} listings matched", nl_ms:"<5 s matching guaranteed", nl_filtered:"listings",
+      nl_none:"No matches — ask the agent in the chat, tweak zones and we'll suggest similar ones.",
+      prop_studio:"Studio", prop_habs:"{n} bed", prop_lift:"lift", prop_nolift:"no lift",
+      c_reformar:"To renovate", c_bueno:"Well kept", c_reformado:"Renovated", guest:"Guest", hot:"⚡ hot lead · score {s}/100", mem_name:"Name", mem_role:"Role", mem_budget:"Budget", mem_rooms:"Rooms", mem_zones:"Zones", mem_tl:"Timeline", mem_tel:"Phone", mem_seller:"Seller profile", why_label:"Why it fits: ", share_match:"Di Milano match: ", role_buyer:"Buyer", role_seller:"Seller", role_tenant:"Tenant", mb_general:"General agent", mb_legal:"⚖️ Legal & economic", mb_new:"NEW"
     },
     gl: {
       nav_agent:"Axente IA", nav_props:"Propiedades", nav_tas:"Tasación", nav_merc:"Mercado", nav_crm:"CRM",
@@ -119,7 +181,7 @@
       hero_sub:"Cualifica compradores, axenda visitas, tasa vivenda, estima a túa reforma e xestiona o CRM — con memoria conversacional, en segundos e sen durmirse xamais.",
       stat1:"Emparellamento lead→vivenda", stat2:"Axente sempre activo", stat3:"Do fluxo técnico-comercial-administrativo", stat4:"Galego, castelán, inglés (+ folla de ruta 35 idiomas)",
       fc2_t:"Visita agendada", fc2_s:"Xoves 17:30 · Casco Vello", fc3_t:"Lead cualificado", fc3_s:"Score 82 / 100 · Orzamento 165 k€",
-      sec1_k:"01 · O axente", sec1_h:"Fala con el. Lémbrate, cualifícate, emparéate.",
+      sec1_k:"01 · O axente", sec1_h:"Fala con el: lembrase de ti, cualifícate e emparéate.",
       sec1_sub:"Cómpórtate como un comprador ou vendedor real: o axente extrae orzamento, zonas, prazos e financiación da linguaxe natural, garda a memoria no teu navegador e escríbea no CRM en vivo.",
       sec2_k:"03 · Busca conversacional", sec2_h:"Busca en linguaxe natural, sen filtros.",
       sec2_sub:"Á estilo Zillow: escribe o que queres e o motor analízao, filtra e explica por que te serve cada inmoble.",
@@ -134,13 +196,13 @@
       role1_c:"Revisión documental: notas simples, cargas, débedas e estatutos da comunidade.",
       role2_a:"Cualificación de leads: orzamento, zona, prazo, financiación, motivo.",
       role2_b:"Emparellamento <5 s ao inventario e contraofertas con datos.",
-      role2_c:"Copy de anuncios para Idealista, Fotocasa e Habitaclia, co memoria do comprador.",
-      role3_a:"CRM en vivo: pipeine, etapas, score e próxima acción.",
+      role2_c:"Copy de anuncios para Idealista, Fotocasa e Habitaclia, coa memoria do comprador.",
+      role3_a:"CRM en vivo: pipeline, etapas, score e próxima acción.",
       role3_b:"Gastos de Galicia: ITP 10 % (Pontevedra), notaría, rexistro, xestión.",
       role3_c:"Axenda de visitas, recordatorios e seguimento post-visita automático.",
-      sec6_k:"07 · CRM administrativo", sec6_h:"Todo o que o axente conversa, remata no pipeine.",
+      sec6_k:"07 · CRM administrativo", sec6_h:"Todo o que o axente conversa, remata no pipeline.",
       sec6_sub:"Demo local na v1.0 (localStorage); ao conectar Supabase, cada conversación escribe directo na túa base de datos.",
-      crm_mode:"Modo demo · localStorage", crm1:"Leads captados", crm2:"Leads quentes (score > 70)", crm3:"Visitas agendadas", crm4:"Pipeine estimado",
+      crm_mode:"Modo demo · localStorage", crm1:"Leads captados", crm2:"Leads quentes (score > 70)", crm3:"Visitas agendadas", crm4:"Pipeline estimado",
       crm_t1:"Lead", crm_t2:"Rol", crm_t3:"Orzamento", crm_t4:"Zonas", crm_t5:"Etapa", crm_t6:"Próxima acción",
       crm_seed:"Cargar leads demo", crm_clear:"Baleirar CRM", crm_export:"Exportar CSV",
       share_lbl:"Comparte ou copia", copied:"Copiado! Agora pégao con Ctrl+V", shared:"Compartindo…",
@@ -159,9 +221,42 @@
       online:"en liña · responde en <1 s", send:"Enviar", search:"Buscar", confirm:"Confirmar visita",
       ph_chat:"Escribe: “busco piso 2 hab en Bouzas por menos de 160k con ascensor”",
       ph_nl:"“ático reformado fronte á ría con vistas, orzamento 170k”", ph_name:"O teu nome", ph_phone:"Móbil / WhatsApp",
-      foot5:"© 2026 Di Milano · Todalas cifras deste sitio son estimacións orientativas do axente IA, non tasación pericial."
+      foot5:"© 2026 Di Milano · Todalas cifras deste sitio son estimacións orientativas do axente IA, non tasación pericial.",
+      wa_prop:"Ola, chego dende a web de Di Milano. Interésame “{t}” ({p}, {z}). Quero axendar unha visita.",
+      wa_gen:"Ola, chego dende a web de Di Milano. Quero información e axendar unha visita.",
+      wa_chat:"Ola, chego dende a web de Di Milano. Quero axendar unha visita.",
+      btn_visit:"Axendar visita", btn_ask:"Pedir análise", share_t:"Compartir ou copiar enlace",
+      sched_title:"Axendar visita", sched_q:"Visitamos “{p}” · {s}. A que nome o deixamos?",
+      need_name:"Dinos o teu nome para o deixar agendado", visit_ok:"✅ Visita {s} — confirmámoscho por WhatsApp",
+      visit_word:"Visita", s0:"Novo", s1:"Cualificado", s2:"Visita agendada", s3:"Oferta", s4:"Pechado",
+      crm_empty:"Nada aínda: conversa co axente na sección 01 e verás aquí os leads co seu score en vivo.",
+      demo_toast:"Leads demo cargados",
+      d_note1:"Enviar 3 matches + axenda de visitas", d_note2:"Enviar informe de tasación por email",
+      d_note3:"Visita xoves 17:30 · para reformar Coia", d_note4:"Reconducir se pican",
+      err_int:"Tiven un fallo interno, téntao de novo 🙏",
+      m2_low:"Bo intento — xogando con m² <20. Pon algo real 🙂", m2_real:"M² reais, por favor 🙂",
+      tas_ok:"Tasación na túa ficha do CRM · xerada en {ms} ms",
+      voice_f:"Voz feminina activada. ", voice_m:"Voz masculina activada. ",
+      t_voice:"Ler as respostas en voz alta", t_reset:"Baleirar a memoria", t_theme:"Cambiar tema",
+      t_vf:"Voz feminina", t_vm:"Voz masculina", t_mic:"Falar (voz)",
+      sh_x:"X / Twitter", sh_wa:"WhatsApp", sh_fb:"Facebook", sh_li:"LinkedIn", sh_na:"Máis apps.",
+      sh_cp:"Copiar enlace (despois pégao con Ctrl+V)", sh_cp2:"Copiar enlace",
+      sh_ig:"Instagram de Di Milano", sh_in:"LinkedIn de Di Milano",
+      ref_lvl0:"Lavado de cara", ref_lvl1:"Reforma integral", ref_lvl2:"Reforma premium",
+      ref_row_new:"Novo valor estimado do inmoble", ref_row_uplift:"Plusvalía esperada ao reformar (zona {z})",
+      ref_row_margin:"Marxe estimado", ref_note:"Reformas con valor crecente en Barrio {z} (estimación orientativa).",
+      tas_range:"rango", tas_row0:"€/m² resultado", tas_row1:"Alugueiro estimado", tas_row2:"Renda bruta",
+      tas_row3:"Teto tras a reforma", tas_row4:"Obra estimada",
+      tas_note:"⚠️ Estimación orientativa do axente (non tasación pericial). Axústase ao coñecer a nota rexistral, o estado real e as vistas.",
+      tas_share:"Tasación IA Di Milano: o meu piso en {z} vale ~{p} ({m}/m²)",
+      nl_match:"{a}/{b} inmobles emparellados", nl_ms:"matching <5 s garantizado", nl_filtered:"inmobles",
+      nl_none:"Sen coincidencias — pídeo ao axente no chat, axusta zonas ou suxerimos similares.",
+      prop_studio:"Estudio", prop_habs:"{n} hab", prop_lift:"ascensor", prop_nolift:"sen ascensor",
+      c_reformar:"Para reformar", c_bueno:"Bo estado", c_reformado:"Reformado", guest:"Convidado", hot:"⚡ lead quente · score {s}/100", mem_name:"Nome", mem_role:"Rol", mem_budget:"Orzamento", mem_rooms:"Dormitorios", mem_zones:"Zonas", mem_tl:"Prazo", mem_tel:"Móbil", mem_seller:"Ficha Vendedor", why_label:"Por que encaixa: ", share_match:"Match de Di Milano: ", role_buyer:"Comprador", role_seller:"Vendedor", role_tenant:"Arrendatario", mb_general:"Axente xeral", mb_legal:"⚖️ Legal & económico", mb_new:"NOVO"
     }
   };
+  const T = k => (I18N[LANG] || I18N.es)[k] || I18N.es[k] || k;
+  const MT = o => (o && typeof o === "object" && !Array.isArray(o)) ? (o[LANG] || o.es) : o;
   function applyLang() {
     const d = I18N[LANG] || I18N.es;
     document.querySelectorAll("[data-i18n]").forEach(el => {
@@ -175,9 +270,11 @@
       } else el.textContent = d[k];
     });
     document.querySelectorAll("[data-i18n-ph]").forEach(el => { const k = el.getAttribute("data-i18n-ph"); if (d[k]) el.placeholder = d[k]; });
+    document.querySelectorAll("[data-i18n-t]").forEach(el => { const k = el.getAttribute("data-i18n-t"); if (d[k]) { el.title = d[k]; el.setAttribute("aria-label", d[k]); } });
     document.documentElement.lang = LANG === "gl" ? "gl" : LANG;
     localStorage.setItem("mv_lang", LANG);
     A().setLang(LANG);
+    try { renderProps(); renderCRM(); } catch (err) {}
     const modeEl = $("dbMode");
     if (modeEl) modeEl.textContent = S().MODE.display();
     modeEl.classList.toggle("cloud", S().MODE.get() === "supabase");
@@ -248,7 +345,7 @@
         (r.replies || []).forEach(rp => { if (rp.meta && rp.meta.chips) renderChips(rp.meta.chips); });
       } else {
         (r.replies || []).forEach((rp, i) => {
-          if (rp.text) bubble(rp.text, "bot", { time: i === 0 && r.score >= 70 ? ["⚡ lead caliente · score " + r.score + "/100"] : null });
+          if (rp.text) bubble(rp.text, "bot", { time: i === 0 && r.score >= 70 ? T("hot").replace("{s}", r.score) : null });
           if (rp.meta && rp.meta.chips) renderChips(rp.meta.chips);
         });
         if (speechEnabled) {
@@ -260,9 +357,10 @@
       updateMemory(r);
       r.actions.forEach(a => { handleAction(a); });
     } catch (e) {
+      try { localStorage.setItem("mv_lastErr", String(e && e.stack || e).slice(0, 900)); } catch (ee) {}
       console.error("[MV] agent error", e);
       typing(false);
-      toast("He tenido un fallo interno, inténtalo de nuevo 🙏");
+      toast(T("err_int"));
     }
     renderCRM();
   }
@@ -278,16 +376,16 @@
   function updateMemory(r) {
     const p = r.profile; const list = $("memList");
     const rows = [
-      ["Nombre", p.name], ["Rol", p.role], ["Presupuesto", p.budget_max ? eur(p.budget_max) : null],
-      ["Habitaciones", p.rooms !== null ? (p.rooms === 0 ? "Estudio" : p.rooms + " hab") : null],
-      ["Zonas", p.zones.map(z => D().ZONES.find(x => x.id === z).name).join(", ")],
-      ["Plazo", p.timeline], ["Móvil", p.phone], ["Ficha Vendedor", p.propZone ? (D().ZONES.find(x => x.id === p.propZone).name + ", " + (p.propM2 || "?") + " m²") : null]
+      ["mem_name", p.name], ["mem_role", ({ comprador: "role_buyer", vendedor: "role_seller", inquilino: "role_tenant" })[p.role] ? T(({ comprador: "role_buyer", vendedor: "role_seller", inquilino: "role_tenant" })[p.role]) : p.role], ["mem_budget", p.budget_max ? eur(p.budget_max) : null],
+      ["mem_rooms", p.rooms !== null ? (p.rooms === 0 ? T("prop_studio") : T("prop_habs").replace("{n}", p.rooms)) : null],
+      ["mem_zones", p.zones.map(z => D().ZONES.find(x => x.id === z).name).join(", ")],
+      ["mem_tl", p.timeline], ["mem_tel", p.phone], ["mem_seller", p.propZone ? (D().ZONES.find(x => x.id === p.propZone).name + ", " + (p.propM2 || "?") + " m²") : null]
     ];
     list.innerHTML = "";
     rows.forEach(([k, v]) => {
       if (!v) return;
       const li = document.createElement("li");
-      li.innerHTML = "<span>" + k + "</span><b>" + v + "</b>";
+      li.innerHTML = "<span>" + T(k) + "</span><b>" + v + "</b>";
       list.appendChild(li);
     });
     $("scoreVal").textContent = p.score + "/100";
@@ -296,13 +394,13 @@
     $("scoreLabel").style.color = p.score >= 70 ? "var(--green)" : p.score >= 45 ? "var(--gold2)" : "var(--muted)";
     const mb = $("matchBox");
     const act = (r.actions || []).find(a => a.type === "properties" && a.why);
-    if (act) { mb.hidden = false; $("matchTime").textContent = act.ms + " ms"; $("matchWhy").textContent = "Por qué encaja: " + act.why; }
+    if (act) { mb.hidden = false; $("matchTime").textContent = act.ms + " ms"; $("matchWhy").textContent = T("why_label") + act.why; }
   }
   function handleAction(a) {
     if (a.type === "properties" && a.ids && a.ids.length) {
       renderProps({ onlyIds: a.ids });
       const top = D().PROPS.find(p => p.id === a.ids[0]);
-      if (top) shareData = { text: "Match de Di Milano: " + top.title + " (" + eur(top.price) + ", Vigo)", url: (window.MV_BRAND || {}).site + "/nuestros_pisos" };
+      if (top) shareData = { text: T("share_match") + top.title + " (" + eur(top.price) + ", Vigo)", url: (window.MV_BRAND || {}).site + "/nuestros_pisos" };
       const sec = $("propiedades"); sec.scrollIntoView({ behavior: "smooth" });
     } else if (a.type === "scheduler") {
       openScheduler(a.propId);
@@ -318,8 +416,8 @@
   function waLink(p) {
     const z = p ? D().ZONES.find(x => x.id === p.zone) : null;
     const txt = p
-      ? 'Hola, vengo de la web de Di Milano. Me interesa "' + p.title + '" (' + eur(p.price) + ', ' + (z ? z.name : '') + '). Quiero agendar una visita.'
-      : 'Hola, vengo de la web de Di Milano. Quiero información y agendar una visita.';
+      ? T("wa_prop").replace("{t}", p.title).replace("{p}", eur(p.price)).replace("{z}", z ? z.name : "")
+      : T("wa_gen");
     return 'https://wa.me/' + waNumber() + '?text=' + encodeURIComponent(txt);
   }
   async function renderProps(filter) {
@@ -330,23 +428,23 @@
     if (filter && filter.onlyIds) {
       list = props.filter(p => filter.onlyIds.includes(p.id));
       const ms = filter.ms !== undefined ? filter.ms : null;
-      nlRes.textContent = list.length + "/" + props.length + " inmuebles emparejados" + (ms !== null ? " · " + Math.max(ms, 1) + " ms · " + filter.why : "") + " (matching <5 s garantizado)";
+      nlRes.textContent = T("nl_match").replace("{a}", list.length).replace("{b}", props.length) + (ms !== null ? " · " + Math.max(ms, 1) + " ms · " + filter.why : "") + " (" + T("nl_ms") + ")";
     } else if (filter) {
       list = props.filter(p => filter.ids.includes(p.id));
-      nlRes.textContent = list.length + "/" + props.length + " inmuebles · " + filter.why + " · " + filter.ms + " ms";
+      nlRes.textContent = T("nl_match").replace("{a}", list.length).replace("{b}", props.length) + " · " + filter.why + " · " + filter.ms + " ms";
     }
-    if (!list.length) { nlRes.textContent = "Sin coincidencias — pídeselo al agente en el chat, ajusta zonas o sugerimos similares."; }
+    if (!list.length) { nlRes.textContent = T("nl_none"); }
     list.forEach((p, i) => {
       const z = D().ZONES.find(x => x.id === p.zone);
       const card = document.createElement("article");
       card.className = "prop-card";
       card.innerHTML =
         '<div class="prop-media frame-' + ((i % 5) + 1) + '">' + z.name + (p.condLabel === undefined ? "" : "") + '</div>' +
-        '<div class="prop-tag">' + p.condition + "</div>" +
+        '<div class="prop-tag">' + (p.condition === "bueno" ? T("c_bueno") : p.condition === "reformado" ? T("c_reformado") : T("c_reformar")) + "</div>" +
         '<div class="prop-body"><div class="prop-zone">' + z.name + '</div><h3>' + p.title + '</h3>' +
-        '<div class="prop-meta"><span>' + (p.rooms === 0 ? "Estudio" : p.rooms + " hab") + '</span><span>' + p.m2 + ' m²</span><span>' + p.year + '</span><span>' + (p.elevator ? "ascensor" : "sin ascensor") + '</span></div>' +
+        '<div class="prop-meta"><span>' + (p.rooms === 0 ? T("prop_studio") : T("prop_habs").replace("{n}", p.rooms)) + '</span><span>' + p.m2 + ' m²</span><span>' + p.year + '</span><span>' + (p.elevator ? T("prop_lift") : T("prop_nolift")) + '</span></div>' +
         '<div class="prop-price">' + eur(p.price) + ' <small>· ' + eur(p.price / p.m2) + '/m² · alquiler ~' + eur(p.m2 * z.rentM2) + '/mes</small></div>' +
-        '<div class="prop-actions"><button class="btn btn-gold btn-sm" data-visit="' + p.id + '">Agendar visita</button><a class="btn btn-ghost btn-sm" href="' + waLink(p) + '" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn-ghost btn-sm" href="#agente">Pedir análisis</a><button class="share-btn sm" data-share="x" data-prop="' + p.id + '" title="Compartir/X y copiar">↗</button></div></div>';
+        '<div class="prop-actions"><button class="btn btn-gold btn-sm" data-visit="' + p.id + '">' + T("btn_visit") + '</button><a class="btn btn-ghost btn-sm" href="' + waLink(p) + '" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn-ghost btn-sm" href="#agente">' + T("btn_ask") + '</a><button class="share-btn sm" data-share="x" data-prop="' + p.id + '" title="' + T("share_t") + '">↗</button></div></div>';
       grid.appendChild(card);
     });
     grid.querySelectorAll("[data-visit]").forEach(b => b.onclick = () => openScheduler(b.getAttribute("data-visit")));
@@ -401,7 +499,7 @@
     ev.preventDefault();
     const zoneId = $("tasZone").value, m2 = +$("tasM2").value, rooms = +$("tasRooms").value,
           year = +$("tasYear").value, cond = $("tasCond").value, asc = $("tasAsc").checked;
-    if (m2 < 20) { toast("Buen intento — jugando con m² <20. Pon algo real 🙂"); return; }
+    if (m2 < 20) { toast(T("m2_low")); return; }
     const v = A().valuate(zoneId, m2, rooms, year, cond, asc);
     const out = $("tasOut");
     out.innerHTML =
@@ -413,25 +511,25 @@
       (v.reformNote ? '<tr><td>Techo tras reforma</td><td>' + eur(v.mid * 1.12) + '</td></tr><tr><td>Obra estimada</td><td>' + eur(A().reformCost(m2, "integral").from) + " – " + eur(A().reformCost(m2, "integral").to) + "</td></tr>" : '') +
       "</table>" +
       '<p class="note">⚠️ Estimación orientativa del agente (no tasación pericial). Facilita informes medianos al conocer nota registral, estado real y vista.</p>';
-    toast("Tasación en tu ficha del CRM · generada en " + Math.round(80 + Math.random() * 120) + " ms");
-    shareData = { text: "Tasación IA Di Milano: mi piso en " + v.zone + " vale ~" + eur(v.mid) + " (" + eur(v.baseM2) + "/m²)", url: (window.MV_BRAND || {}).site + "/valorador" };
+    toast(T("tas_ok").replace("{ms}", Math.round(80 + Math.random() * 120)));
+    shareData = { text: T("tas_share").replace("{z}", v.zone).replace("{p}", eur(v.mid)).replace("{m}", eur(v.baseM2)), url: (window.MV_BRAND || {}).site + "/valorador" };
   }
   function doReform(ev) {
     ev.preventDefault();
     const m2 = +$("refM2").value, level = $("refLevel").value, zoneId = $("refZoneEst").value;
-    if (m2 < 10) { toast("M² reales, por favor 🙂"); return; }
+    if (m2 < 10) { toast(T("m2_real")); return; }
     const r = A().reformCost(m2, level);
     const z = D().ZONES.find(x => x.id === zoneId);
     const uplift = Math.round(m2 * z.priceM2 * 0.16);
     const mid = (r.from + r.to) / 2;
     $("refOut").innerHTML =
       "<table>" +
-      '<tr><td>' + (level === "lavado" ? "Lavado de cara" : level === "premium" ? "Reforma premium" : "Reforma integral") + " · " + m2 + ' m²</td><td>' + eur(r.from) + " – " + eur(r.to) + "</td></tr>" +
-      "<tr><td>Nuevo valor estimado del inmueble</td><td>" + eur(z.priceM2 * m2) + "</td></tr>" +
-      "<tr><td>Plusvalía esperada al reformar (zona " + z.name + ')</td><td class="green">+' + eur(uplift) + "</td></tr>" +
-      "<tr><td>Margen estimado</td><td>" + (uplift - mid > 0 ? '<span class="green">+' + eur(uplift - mid) + "</span>" : '<span style="color:var(--red)">−' + eur(mid - uplift) + "</span>") + "</td></tr>" +
+      '<tr><td>' + (level === "lavado" ? T("ref_lvl0") : level === "premium" ? T("ref_lvl2") : T("ref_lvl1")) + " · " + m2 + ' m²</td><td>' + eur(r.from) + " – " + eur(r.to) + "</td></tr>" +
+      "<tr><td>" + T("ref_row_new") + "</td><td>" + eur(z.priceM2 * m2) + "</td></tr>" +
+      "<tr><td>" + T("ref_row_uplift").replace("{z}", z.name) + '</td><td class="green">+' + eur(uplift) + "</td></tr>" +
+      "<tr><td>" + T("ref_row_margin") + "</td><td>" + (uplift - mid > 0 ? '<span class="green">+' + eur(uplift - mid) + "</span>" : '<span style="color:var(--red)">−' + eur(mid - uplift) + "</span>") + "</td></tr>" +
       "</table>" +
-      '<p class="note" style="font-size:.72rem;color:var(--muted);margin-top:10px">' + r.note + " · Reformas con valor creciente en Barrio " + z.name + " (estimación orientativa).</p>";
+      '<p class="note" style="font-size:.72rem;color:var(--muted);margin-top:10px">'+ MT(r.note) + " · " + T("ref_note").replace("{z}", z.name) + "</p>";
   }
 
   /* ---------- scheduler ---------- */
@@ -439,7 +537,7 @@
   function openScheduler(propId) {
     const p = D().PROPS.find(x => x.id === propId); if (!p) return;
     pendingProp = p;
-    $("modalTitle").textContent = "Agendar visita";
+    $("modalTitle").textContent = T("sched_title");
     $("modalProp").textContent = p.title + " · " + D().ZONES.find(z => z.id === p.zone).name + " · " + eur(p.price);
     const slots = A().nextSlots();
     const list = $("slotList"); list.innerHTML = "";
@@ -453,7 +551,7 @@
     $("modal").hidden = false;
   }
   function confirmSlot(slot) {
-    $("slotConfirmText").textContent = "Visitamos “" + pendingProp.title + "” · " + slot + ". ¿A qué nombre lo dejamos?";
+    $("slotConfirmText").textContent = T("sched_q").replace("{p}", pendingProp.title).replace("{s}", slot);
     $("slotConfirm").hidden = false;
     $("slotConfirm").dataset.slot = slot;
     $("visitName").value = (lastProfile && lastProfile.name) || "";
@@ -462,7 +560,7 @@
     const p = pendingProp;
     const name = $("visitName").value.trim(), phone = $("visitPhone").value.trim(), slot = $("slotConfirm").dataset.slot;
     if (!p || !$("slotConfirm").dataset.slot) return $("modal").hidden = true;
-    if (!name) { toast("Dinos tu nombre para dejarlo agendado"); return; }
+    if (!name) { toast(T("need_name")); return; }
     const prof = A().profile();
     prof.name = twinDeep(prof.name, name);
     prof.phone = phone || prof.phone;
@@ -470,17 +568,17 @@
     prof.lead = prof.lead && prof.lead.name ? prof.lead : S().blankLead();
     prof.lead.name = name; if (phone) prof.lead.phone = "+34 " + phone.replace(/\D/g, "");
     prof.lead.visits.push({ property: p.title, slot });
-    prof.lead.stage = 2; prof.lead.next_action = "Visita " + slot + " · " + p.title;
+    prof.lead.stage = 2; prof.lead.next_action = T("visit_word") + " " + slot + " · " + p.title;
     await S().saveLead(prof.lead);
     A().setState ? A().setState(prof) : null;
     $("modal").hidden = true;
-    toast("✅ Visita " + slot + " — te confirmamos por WhatsApp");
+    toast(T("visit_ok").replace("{s}", slot));
     renderCRM();
   }
   function twinDeep(a, b) { return b || a; }
 
   /* ---------- CRM ---------- */
-  const STAGES = ["Nuevo", "Cualificado", "Visita agendada", "Oferta", "Cerrado"];
+  const STAGES = () => [T("s0"), T("s1"), T("s2"), T("s3"), T("s4")];
   async function renderCRM() {
     const leads = await S().getLeads();
     $("crmLeads").textContent = leads.length;
@@ -492,18 +590,18 @@
     const body = $("crmBody");
     body.innerHTML = "";
     if (!leads.length) {
-      body.innerHTML = '<tr><td colspan="7" class="muted">Nada aún: conversa con el agente en la sección 01 y verás aquí los leads con su score en vivo.</td></tr>';
+      body.innerHTML = '<tr><td colspan="7" class="muted">' + T("crm_empty") + "</td></tr>";
       return;
     }
     leads.forEach(l => {
       const tr = document.createElement("tr");
       tr.innerHTML =
-        "<td><b>" + (l.name || "Invitado") + "</b>" + (l.phone ? '<br><span class="muted" style="font-size:.72rem">' + l.phone + "</span>" : "") + "</td>" +
+        "<td><b>" + (l.name || T("guest")) + "</b>" + (l.phone ? '<br><span class="muted" style="font-size:.72rem">' + l.phone + "</span>" : "") + "</td>" +
         "<td>" + (l.role || "—") + "</td>" +
         '<td><span style="font-family:var(--mono);color:' + ((l.score || 0) >= 70 ? "var(--green)" : "var(--gold2)") + '">' + (l.score || 0) + "</span></td>" +
         "<td>" + (l.budget_max ? eur(l.budget_max) : "—") + "</td>" +
         "<td>" + ((l.zones || []).map(z => (D().ZONES.find(x => x.id === z) || {}).name).filter(Boolean).join(", ") || "—") + "</td>" +
-        '<td><span class="stage s' + (l.stage || 0) + '">' + STAGES[l.stage || 0] + "</span></td>" +
+        '<td><span class="stage s' + (l.stage || 0) + '">' + STAGES()[l.stage || 0] + "</span></td>" +
         "<td>" + (l.next_action || "—") + "</td>";
       body.appendChild(tr);
     });
@@ -511,7 +609,7 @@
   }
   function exportCSV(leads) {
     const rows = [["name", "role", "budget_max", "rooms", "zones", "phone", "stage", "score", "next_action"]];
-    (leads || []).forEach(l => rows.push([l.name, l.role, l.budget_max, l.rooms, (l.zones || []).join("|"), l.phone, STAGES[l.stage || 0], l.score, l.next_action]));
+    (leads || []).forEach(l => rows.push([l.name, l.role, l.budget_max, l.rooms, (l.zones || []).join("|"), l.phone, STAGES()[l.stage || 0], l.score, l.next_action]));
     const csv = rows.map(r => r.map(c => '"' + String(c == null ? "" : c).replace(/"/g, "'") + '"').join(",")).join("\n");
     const blob = new Blob(["\uFEFF" + csv], { type: "text/csv;charset=utf-8" });
     const a = $("crmExport");
@@ -520,11 +618,11 @@
   async function seedDemo() {
     const mk = (name, role, budget, rooms, zones, stage, score, next) =>
       Object.assign(S().blankLead(), { name, role, budget_max: budget, rooms, zones, stage, score, next_action: next, lang: LANG });
-    await S().saveLead(mk("Demo · Marina", "comprador", 140000, 2, ["bouzas", "cascovello"], 1, 75, "Enviar 3 matches + agenda de visitas"));
-    await S().saveLead(mk("Demo · Luis", "vendedor", 189000, 3, ["alcabre"], 1, 68, "Enviar informe de tasación por email"));
-    await S().saveLead(mk("Demo · Keila", "inversor", 110000, 2, ["coia"], 2, 82, "Visita jueves 17:30 · para reformar Coia"));
-    await S().saveLead(mk("Demo · pqrs", "comprador", 95000, 0, ["cascovello"], 0, 40, "Reconducir si pican"));
-    renderCRM(); toast("Leads demo cargados");
+    await S().saveLead(mk("Demo · Marina", "comprador", 140000, 2, ["bouzas", "cascovello"], 1, 75, T("d_note1")));
+    await S().saveLead(mk("Demo · Luis", "vendedor", 189000, 3, ["alcabre"], 1, 68, T("d_note2")));
+    await S().saveLead(mk("Demo · Keila", "inversor", 110000, 2, ["coia"], 2, 82, T("d_note3")));
+    await S().saveLead(mk("Demo · pqrs", "comprador", 95000, 0, ["cascovello"], 0, 40, T("d_note4")));
+    renderCRM(); toast(T("demo_toast"));
   }
 
   /* ---------- toast & misc ---------- */
@@ -564,7 +662,7 @@
     speechEnabled = voicePref === "off" ? false : true;
     $("voiceToggle").style.borderColor = speechEnabled ? "var(--gold)" : "";
     if (!speechEnabled && window.speechSynthesis) { try { speechSynthesis.cancel(); } catch (e) {} }
-    if (speechEnabled) { const B = window.MV_BRAND || {}; speak((voicePref === "m" ? "Voz masculina activada. " : "Voz femenina activada. ") + (B.name || "Di Milano")); }
+    if (speechEnabled) { const B = window.MV_BRAND || {}; speak((voicePref === "m" ? T("voice_m") : T("voice_f")) + (B.name || "Di Milano")); }
     toast("Voz: " + (g === "f" ? "femenina ♀" : g === "m" ? "masculina ♂" : "silencio"));
   }
   if (window.speechSynthesis) speechSynthesis.addEventListener && speechSynthesis.addEventListener("voiceschanged", () => { pickVoice(LANG); });
@@ -728,7 +826,7 @@
       c.innerHTML = "<h3>" + z.name + ' <span class="zone-trend">' + z.trend + '</span></h3>' +
         '<div class="zone-price">' + eur(z.priceM2) + '<small> /m² venta</small></div>' +
         '<div style="font-size:.8rem;color:var(--gold)">alquiler ~' + eur(z.rentM2 * 70) + "/mes (70 m²)</div>" +
-        "<p style=\"margin-top:8px\">" + z.note + "</p>";
+        "<p style=\"margin-top:8px\">" + MT(z.note) + "</p>";
       grid.appendChild(c);
     });
   }
@@ -745,7 +843,7 @@ document.querySelectorAll('.map-toggle').forEach(function(btn){btn.addEventListe
   var n = String(b.whatsapp || b.telRaw || "").replace(/\D/g, "");
   if (!n) return;
   var f = document.getElementById('waFloat');
-  if (f) f.href = 'https://wa.me/' + n + '?text=' + encodeURIComponent('Hola, vengo de la web de Di Milano. Quiero información y agendar una visita.');
+  if (f) f.href = 'https://wa.me/' + n + '?text=' + encodeURIComponent(T("wa_gen"));
   var c = document.getElementById('waChat');
   if (c) {
     c.href = 'https://wa.me/' + n;
@@ -754,7 +852,7 @@ document.querySelectorAll('.map-toggle').forEach(function(btn){btn.addEventListe
       var log = document.getElementById('chatLog');
       var msgs = log ? log.querySelectorAll('.msg.user, .user, [data-role=user]') : [];
       var last = msgs.length ? msgs[msgs.length - 1].innerText.trim() : '';
-      var txt = 'Hola, vengo de la web de Di Milano. Quiero agendar una visita.' + (last ? ' Contexto: ' + last : '');
+      var txt = T("wa_chat") + (last ? " Contexto: " + last : "");
       window.open('https://wa.me/' + n + '?text=' + encodeURIComponent(txt), '_blank');
     });
   }

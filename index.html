@@ -36,7 +36,7 @@
       <a href="#crm" data-i18n="nav_crm">CRM</a>
     </nav>
     <div class="nav-actions">
-      <button id="themeToggle" class="icon-btn theme-toggle" type="button" title="Cambiar tema" aria-label="Cambiar tema">🌙</button>
+      <button id="themeToggle" class="icon-btn theme-toggle" type="button" title="Cambiar tema" aria-label="Cambiar tema" data-i18n-t="t_theme">🌙</button>
       <select id="langSelect" class="lang-select" aria-label="Idioma">
         <option value="es">ES</option><option value="gl">GL</option><option value="en">EN</option>
       </select>
@@ -61,12 +61,12 @@
       </div>
       <div class="share-row" data-share-title="Di Milano • Agente IA inmobiliario en Vigo">
         <span data-i18n="share_lbl">Comparte o copia</span>
-        <button class="share-btn" data-share="x" title="X / Twitter">𝕏</button>
-        <button class="share-btn" data-share="whatsapp" title="WhatsApp">✆</button>
-        <button class="share-btn" data-share="facebook" title="Facebook">𝐟</button>
-        <button class="share-btn" data-share="linkedin" title="LinkedIn">in</button>
-        <button class="share-btn" data-share="native" title="Más apps…">⋯</button>
-        <button class="share-btn" data-share="copy" title="Copiar enlace (luego pega con Ctrl+V)">⧉</button>
+        <button class="share-btn" data-share="x" title="X / Twitter" data-i18n-t="sh_x">𝕏</button>
+        <button class="share-btn" data-share="whatsapp" title="WhatsApp" data-i18n-t="sh_wa">✆</button>
+        <button class="share-btn" data-share="facebook" title="Facebook" data-i18n-t="sh_fb">𝐟</button>
+        <button class="share-btn" data-share="linkedin" title="LinkedIn" data-i18n-t="sh_li">in</button>
+        <button class="share-btn" data-share="native" title="Más apps…" data-i18n-t="sh_na">⋯</button>
+        <button class="share-btn" data-share="copy" title="Copiar enlace (luego pega con Ctrl+V)" data-i18n-t="sh_cp">⧉</button>
       </div>
       <div class="stats-row">
         <div class="stat"><b class="gold">&lt;5 s</b><span data-i18n="stat1">Emparejamiento lead→vivienda</span></div>
@@ -99,19 +99,19 @@
           <div><b>Milano Agent</b><span class="dot-online" data-i18n="online">en línea · respondiendo en &lt;1 s</span></div>
           <div class="chat-tools">
             <button id="voiceToggle" class="icon-btn" title="Leer respuestas en voz alta" aria-label="Voz" data-i18n-t="t_voice">🔊</button>
-            <button id="voiceFemale" class="icon-btn" title="Voz femenina" aria-label="Voz femenina">♀</button>
-            <button id="voiceMale" class="icon-btn" title="Voz masculina" aria-label="Voz masculina">♂</button>
+            <button id="voiceFemale" class="icon-btn" title="Voz femenina" aria-label="Voz femenina" data-i18n-t="t_vf">♀</button>
+            <button id="voiceMale" class="icon-btn" title="Voz masculina" aria-label="Voz masculina" data-i18n-t="t_vm">♂</button>
             <button id="resetChat" class="icon-btn" title="Borrar memoria" aria-label="Reiniciar" data-i18n-t="t_reset">↺</button>
           </div>
         </div>
         <div class="chat-modebar" id="chatModebar" role="tablist" aria-label="Modo del agente">
-          <button type="button" class="mode-btn active" data-agent-mode="general" role="tab" aria-selected="true">Agente general</button>
-          <button type="button" class="mode-btn" data-agent-mode="legal" role="tab" aria-selected="false">⚖️ Legal &amp; económico <span class="mode-new">NUEVO</span></button>
+          <button type="button" class="mode-btn active" data-agent-mode="general" role="tab" aria-selected="true" data-i18n="mb_general">Agente general</button>
+          <button type="button" class="mode-btn" data-agent-mode="legal" role="tab" aria-selected="false"><span data-i18n="mb_legal">⚖️ Legal &amp; económico</span> <span class="mode-new" data-i18n="mb_new">NUEVO</span></button>
         </div>
         <div id="chatLog" class="chat-log"></div>
         <div id="chips" class="chip-list"></div>
         <form id="chatForm" class="chat-input-row">
-          <button type="button" id="micBtn" class="icon-btn mic" title="Hablar (voz)" aria-label="Micrófono" hidden>🎙</button>
+          <button type="button" id="micBtn" class="icon-btn mic" title="Hablar (voz)" aria-label="Micrófono" data-i18n-t="t_mic" hidden>🎙</button>
           <input id="chatInput" type="text" autocomplete="off" data-i18n-ph="ph_chat" placeholder="Escribe: “busco piso 2 hab en Bouzas menos de 160k con ascensor”">
           <button id="sendBtn" class="btn btn-gold" data-i18n="send">Enviar</button>
         </form>
@@ -406,11 +406,11 @@
         <span class="footer-badge">Agente 24/7</span>
       </div>
       <div class="footer-rrss">
-        <a class="share-btn" href="https://www.instagram.com/dimilanovigo/" target="_blank" rel="noopener" title="Instagram">◎</a>
-        <a class="share-btn" href="https://www.linkedin.com/company/di-milano-vigo/" target="_blank" rel="noopener" title="LinkedIn">in</a>
-        <button class="share-btn" data-share="whatsapp" title="WhatsApp">✆</button>
-        <button class="share-btn" data-share="x" title="X">𝕏</button>
-        <button class="share-btn" data-share="copy" title="Copiar enlace">⧉</button>
+        <a class="share-btn" href="https://www.instagram.com/dimilanovigo/" target="_blank" rel="noopener" title="Instagram" data-i18n-t="sh_ig">◎</a>
+        <a class="share-btn" href="https://www.linkedin.com/company/di-milano-vigo/" target="_blank" rel="noopener" title="LinkedIn" data-i18n-t="sh_in">in</a>
+        <button class="share-btn" data-share="whatsapp" title="WhatsApp" data-i18n-t="sh_wa">✆</button>
+        <button class="share-btn" data-share="x" title="X" data-i18n-t="sh_x">𝕏</button>
+        <button class="share-btn" data-share="copy" title="Copiar enlace" data-i18n-t="sh_cp2">⧉</button>
       </div>
     </div>
     <div class="footer-col">
@@ -484,13 +484,13 @@
 
 <div id="toast" class="toast" hidden></div>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.1/dist/umd/supabase.min.js" defer></script>
-<script src="assets/js/config.js" defer></script>
-<script src="assets/js/data.js" defer></script>
-<script src="assets/js/supabase-client.js" defer></script>
-<script src="assets/js/legal.js" defer></script>
-<script src="assets/js/agent.js" defer></script>
-<script src="assets/js/app.js" defer></script>
+<script src="assets/js/vendor/supabase.min.js" ></script>
+<script src="assets/js/config.js" ></script>
+<script src="assets/js/data.js" ></script>
+<script src="assets/js/supabase-client.js" ></script>
+<script src="assets/js/legal.js" ></script>
+<script src="assets/js/agent.js" ></script>
+<script src="assets/js/app.js" ></script>
   <a id="waFloat" class="wa-float" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
 </body>
 </html>
