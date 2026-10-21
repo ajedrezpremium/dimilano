@@ -37,6 +37,10 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacin
 .btn-block{width:100%}
 .icon-btn{background:var(--panel);border:1px solid var(--line2);color:var(--muted);border-radius:10px;width:34px;height:34px;cursor:pointer;font-size:.95rem}
 .icon-btn:hover{color:var(--gold2);border-color:var(--line)}
+.robot-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--gold),#b8862f);color:#120d03;box-shadow:0 4px 14px rgba(214,169,68,.35);transition:transform .15s,filter .15s;flex:0 0 auto}
+.robot-btn:hover{filter:brightness(1.12);transform:translateY(-1px)}
+.robot-btn::after{content:attr(data-tip);position:absolute;top:calc(100% + 9px);right:0;background:var(--panel);color:var(--ink);border:1px solid var(--line);padding:6px 10px;border-radius:8px;font-size:.72rem;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .15s;z-index:70}
+.robot-btn:hover::after,.robot-btn:focus-visible::after{opacity:1}
 
 /* ---------- hero ---------- */
 .hero{position:relative;overflow:hidden;padding:96px 0 76px;background:
@@ -407,6 +411,7 @@ html[data-theme=light] .doc-card:hover{background:#fff}
   .lang-select{padding:5px 6px;font-size:.7rem}
   .theme-toggle{width:30px;height:30px;flex:0 0 auto}
   .nav-actions .btn-gold{white-space:nowrap;font-size:.68rem;padding:8px 8px;border-radius:9px}
+  .nav-actions .robot-btn{width:36px;height:36px;border-radius:11px}
   .legal-card{padding:16px}
   .legal-tag{font-size:.6rem;max-width:55%}
   .legal-card h3{font-size:1.18rem}

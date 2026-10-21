@@ -44,8 +44,11 @@ window.MV_STORE = (function () {
       jset(LS.L, local.slice(0, 50));
       if (client) try {
         const row = { id: lead.id, name: lead.name, role: lead.role, budget_max: lead.budget_max, rooms: lead.rooms, zones: lead.zones, phone: lead.phone, email: lead.email, stage: lead.stage, score: lead.score, next_action: lead.next_action, lang: lead.lang };
-        const { error } = await client.from("mv_leads").insert(row);
-        if (error && error.code !== "23505") console.warn("[MV] lead →", error.message); // 23505 = ya guardado
+        const { error } = await client.from("mv_leads").upsert(row, { onConflict: "id" });
+        if (error && /^4250|row-level security|permission/i.test(String(error.message || "") + (error.code || ""))) {
+          const { error: e2 } = await client.from("mv_leads").insert(row);
+          if (e2 && e2.code !== "23505") console.warn("[MV] lead", e2.message); // 23505 = ya guardado
+        } else if (error) console.warn("[MV] lead", error.message);
       } catch (e) { /* offline */ }
       return lead;
     },

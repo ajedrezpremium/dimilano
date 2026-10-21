@@ -13,7 +13,7 @@
   const I18N = {
     es: {
       nav_agent:"Agente IA", nav_props:"Propiedades", nav_tas:"Tasación", nav_merc:"Mercado", nav_crm:"CRM",
-      cta_chat:"Hablar con la IA", cta_chat2:"Probar el agente ahora", cta_props:"Ver inmuebles",
+      cta_chat2:"Probar el agente ahora", cta_props:"Ver inmuebles",
       hero_badge:"Vigo · Ría de Pontevedra · 2026",
       hero_t1:"Tu agente inmobiliario de IA", hero_t2:"técnico, comercial y administrativo.",
       hero_sub:"Cualifica compradores, agenda visitas, tasa vivienda, estima tu reforma y gestiona el CRM — con memoria conversacional, en segundos y sin dormirse jamás.",
@@ -94,7 +94,7 @@
     },
     en: {
       nav_agent:"AI Agent", nav_props:"Properties", nav_tas:"Valuation", nav_merc:"Market", nav_crm:"CRM",
-      cta_chat:"Chat with the AI", cta_chat2:"Try the agent now", cta_props:"View listings",
+      cta_chat2:"Try the agent now", cta_props:"View listings",
       hero_badge:"Vigo · Ría de Pontevedra · 2026",
       hero_t1:"Your AI real-estate agent —", hero_t2:"technical, commercial and administrative.",
       hero_sub:"Qualifies buyers, books viewings, values homes, estimates your renovation and drives the CRM — conversational memory, seconds-fast, never asleep.",
@@ -175,7 +175,7 @@
     },
     gl: {
       nav_agent:"Axente IA", nav_props:"Propiedades", nav_tas:"Tasación", nav_merc:"Mercado", nav_crm:"CRM",
-      cta_chat:"Falar coa IA", cta_chat2:"Probar o axente agora", cta_props:"Ver inmobles",
+      cta_chat2:"Probar o axente agora", cta_props:"Ver inmobles",
       hero_badge:"Vigo · Ría de Pontevedra · 2026",
       hero_t1:"O teu axente inmobiliario de IA —", hero_t2:"técnico, comercial e administrativo.",
       hero_sub:"Cualifica compradores, axenda visitas, tasa vivenda, estima a túa reforma e xestiona o CRM — con memoria conversacional, en segundos e sen durmirse xamais.",
