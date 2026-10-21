@@ -21,13 +21,13 @@
       fc2_t:"Visita agendada", fc2_s:"Jueves 17:30 · Casco Vello", fc3_t:"Lead cualificado", fc3_s:"Score 82 / 100 · Presupuesto 165 k€",
       sec1_k:"01 · El agente", sec1_h:"Habla con él. Te recuerda, te cualifica, te empareja.",
       sec1_sub:"Compórtate como un comprador o vendedor real: el agente extrae presupuesto, zonas, plazos y financiación del lenguaje natural, guarda la memoria en tu navegador y la escribe en el CRM en vivo.",
-      sec2_k:"02 · Búsqueda conversacional", sec2_h:"Busca en lenguaje natural, no con filtros.",
+      sec2_k:"03 · Búsqueda conversacional", sec2_h:"Busca en lenguaje natural, no con filtros.",
       sec2_sub:"Zillow-style: escribe lo que quieres y el motor lo analiza, filtra y explica por qué te encaja cada inmueble.",
-      sec3_k:"03 · Tasación instantánea + reformas", sec3_h:"¿Cuánto vale tu piso? ¿Y su techo reformado?",
+      sec3_k:"04 · Tasación instantánea + reformas", sec3_h:"¿Cuánto vale tu piso? ¿Y su techo reformado?",
       sec3_sub:"Valoración por barrio con rango de confianza y, como Zillow AI Mode, coste estimado de tu reforma antes de llamar a nadie.",
-      sec4_k:"04 · Radar de mercado", sec4_h:"Vigo por barrios: precio, alquiler y tendencia.",
+      sec4_k:"05 · Radar de mercado", sec4_h:"Vigo por barrios: precio, alquiler y tendencia.",
       sec4_sub:"Estimaciones orientativas por zona: la IA no inventa cifras exactas — las acota y avisa antes de que inviertas.",
-      sec5_k:"05 · Un agente, tres cerebros", sec5_h:"Técnico. Comercial. Administrativo.",
+      sec5_k:"06 · Un agente, tres cerebros", sec5_h:"Técnico. Comercial. Administrativo.",
       role1_t:"Técnico", role2_t:"Comercial", role3_t:"Administrativo",
       role1_a:"Inspección técnica digital de fichas: antigüedad, eficiencia energética, ITE, ascensor, barreras.",
       role1_b:"Plan de obra: reformas por m², costes y viabilidad de cada proyecto.",
@@ -38,7 +38,7 @@
       role3_a:"CRM en vivo: pipeline, etapas, score y próxima acción.",
       role3_b:"Gastos de Galicia: ITP 10 % (Pontevedra), notaría, registro, gestoría.",
       role3_c:"Agenda de visitas, recordatorios y seguimiento post-visita automático.",
-      sec6_k:"06 · CRM administrativo", sec6_h:"Todo lo que el agente conversa, acaba en el pipeline.",
+      sec6_k:"07 · CRM administrativo", sec6_h:"Todo lo que el agente conversa, acaba en el pipeline.",
       sec6_sub:"Demo local en v1.0 (localStorage); al conectar Supabase, cada conversación escribe directamente en tu base de datos.",
       crm_mode:"Modo demo · localStorage", crm1:"Leads captados", crm2:"Leads calientes (score > 70)", crm3:"Visitas agendadas", crm4:"Pipeline estimado",
       crm_t1:"Lead", crm_t2:"Rol", crm_t3:"Presupuesto", crm_t4:"Zonas", crm_t5:"Etapa", crm_t6:"Próxima acción",
@@ -71,13 +71,13 @@
       fc2_t:"Viewing booked", fc2_s:"Thursday 17:30 · Casco Vello", fc3_t:"Lead qualified", fc3_s:"Score 82 / 100 · Budget €165k",
       sec1_k:"01 · The agent", sec1_h:"Talk to it. It remembers, qualifies and matches you.",
       sec1_sub:"Act like a real buyer or seller: the agent extracts budget, zones, timelines and financing from natural language, keeps memory in your browser and writes to the CRM live.",
-      sec2_k:"02 · Conversational search", sec2_h:"Search in natural language, not with filters.",
+      sec2_k:"03 · Conversational search", sec2_h:"Search in natural language, not with filters.",
       sec2_sub:"Zillow-style: type what you want and the engine parses, filters and explains why each listing fits.",
-      sec3_k:"03 · Instant valuation + renovation", sec3_h:"What is your home worth? And its renovated ceiling?",
+      sec3_k:"04 · Instant valuation + renovation", sec3_h:"What is your home worth? And its renovated ceiling?",
       sec3_sub:"Barrio-level valuation with a confidence range and — Zillow AI Mode style — your renovation cost before you call anyone.",
-      sec4_k:"04 · Market radar", sec4_h:"Vigo by neighbourhood: price, rent, trend.",
+      sec4_k:"05 · Market radar", sec4_h:"Vigo by neighbourhood: price, rent, trend.",
       sec4_sub:"Orientative estimates by zone: the AI never invents exact figures — it bounds them and warns before you invest.",
-      sec5_k:"05 · One agent, three brains", sec5_h:"Technical. Commercial. Administrative.",
+      sec5_k:"06 · One agent, three brains", sec5_h:"Technical. Commercial. Administrative.",
       role1_t:"Technical", role2_t:"Commercial", role3_t:"Administrative",
       role1_a:"Digital inspection of files: age, energy rating, ITE, elevator, accessibility.",
       role1_b:"Works plan: renovations per m², costs and feasibility of each project.",
@@ -88,7 +88,7 @@
       role3_a:"Live CRM: pipeline, stages, score and next action.",
       role3_b:"Galician costs: 10% ITP (Pontevedra), notary, registry, conveyancing.",
       role3_c:"Viewing agenda, reminders and automatic post-viewing follow-up.",
-      sec6_k:"06 · Administrative CRM", sec6_h:"Everything the agent discusses ends up in the pipeline.",
+      sec6_k:"07 · Administrative CRM", sec6_h:"Everything the agent discusses ends up in the pipeline.",
       sec6_sub:"Local demo in v1.0 (localStorage); once Supabase is connected, every conversation writes straight to your database.",
       crm_mode:"Demo mode · localStorage", crm1:"Leads captured", crm2:"Hot leads (score > 70)", crm3:"Viewings booked", crm4:"Estimated pipeline",
       crm_t1:"Lead", crm_t2:"Role", crm_t3:"Budget", crm_t4:"Zones", crm_t5:"Stage", crm_t6:"Next action",
@@ -121,13 +121,13 @@
       fc2_t:"Visita agendada", fc2_s:"Xoves 17:30 · Casco Vello", fc3_t:"Lead cualificado", fc3_s:"Score 82 / 100 · Orzamento 165 k€",
       sec1_k:"01 · O axente", sec1_h:"Fala con el. Lémbrate, cualifícate, emparéate.",
       sec1_sub:"Cómpórtate como un comprador ou vendedor real: o axente extrae orzamento, zonas, prazos e financiación da linguaxe natural, garda a memoria no teu navegador e escríbea no CRM en vivo.",
-      sec2_k:"02 · Busca conversacional", sec2_h:"Busca en linguaxe natural, sen filtros.",
+      sec2_k:"03 · Busca conversacional", sec2_h:"Busca en linguaxe natural, sen filtros.",
       sec2_sub:"Á estilo Zillow: escribe o que queres e o motor analízao, filtra e explica por que te serve cada inmoble.",
-      sec3_k:"03 · Tasación instantánea + reformas", sec3_h:"Canto vale a túa vivenda? E o seu teito reformado?",
+      sec3_k:"04 · Tasación instantánea + reformas", sec3_h:"Canto vale a túa vivenda? E o seu teito reformado?",
       sec3_sub:"Valoración por barrio con rango de confianza e, ao estilo Zillow AI Mode, custo estimado da reforma antes de chamar a ninguén.",
-      sec4_k:"04 · Radar de mercado", sec4_h:"Vigo por barrios: prezo, alugueiro e tendencia.",
+      sec4_k:"05 · Radar de mercado", sec4_h:"Vigo por barrios: prezo, alugueiro e tendencia.",
       sec4_sub:"Estimacións orientativas por zona: a IA non inventa cifras exactas — acótaas e avisa antes de que inviertas.",
-      sec5_k:"05 · Un axente, tres cerebros", sec5_h:"Técnico. Comercial. Administrativo.",
+      sec5_k:"06 · Un axente, tres cerebros", sec5_h:"Técnico. Comercial. Administrativo.",
       role1_t:"Técnico", role2_t:"Comercial", role3_t:"Administrativo",
       role1_a:"Inspección técnica dixital de fichas: antigüidade, eficiencia enerxética, ITE, ascensor, barreiras.",
       role1_b:"Plan de obra: reformas por m², custos e viabilidade de cada proxecto.",
@@ -138,7 +138,7 @@
       role3_a:"CRM en vivo: pipeine, etapas, score e próxima acción.",
       role3_b:"Gastos de Galicia: ITP 10 % (Pontevedra), notaría, rexistro, xestión.",
       role3_c:"Axenda de visitas, recordatorios e seguimento post-visita automático.",
-      sec6_k:"06 · CRM administrativo", sec6_h:"Todo o que o axente conversa, remata no pipeine.",
+      sec6_k:"07 · CRM administrativo", sec6_h:"Todo o que o axente conversa, remata no pipeine.",
       sec6_sub:"Demo local na v1.0 (localStorage); ao conectar Supabase, cada conversación escribe directo na túa base de datos.",
       crm_mode:"Modo demo · localStorage", crm1:"Leads captados", crm2:"Leads quentes (score > 70)", crm3:"Visitas agendadas", crm4:"Pipeine estimado",
       crm_t1:"Lead", crm_t2:"Rol", crm_t3:"Orzamento", crm_t4:"Zonas", crm_t5:"Etapa", crm_t6:"Próxima acción",
@@ -223,7 +223,7 @@
       const r = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ lang: LANG, message: text, profile, history: hist })
+        body: JSON.stringify({ lang: LANG, message: text, profile, history: hist, mode: ((A().legalTopic && A().legalTopic(text)) ? "legal" : (A().getMode ? A().getMode() : "general")) })
       });
       if (!r.ok) return null;
       const j = await r.json();
@@ -614,6 +614,45 @@
     });
   }
 
+
+  /* ---------- modos del agente + acceso legal ---------- */
+  function defaultChips() {
+    return ["Busco piso para comprar", "Quiero vender mi piso", "¿Cuánto valdría mi piso?", "Gastos de compraventa en Vigo", "¿Qué recuerdas de mí?"];
+  }
+  const LEGAL_QUESTIONS = {
+    compraventa: "Quiero comprar una vivienda en Vigo: ¿qué debo revisar antes de firmar, qué impuestos y gastos tendré y qué documentos necesito?",
+    alquiler: "Voy a alquilar una vivienda en Vigo: explícame la fianza legal, la garantía adicional máxima, la duración del contrato y las obligaciones de propietario e inquilino.",
+    reforma: "Voy a reformar mi vivienda en Vigo: dime qué licencias necesito, qué garantías LOE y seguros debo exigir y cómo se aplica el IVA.",
+    garantias: "¿Qué garantías y protecciones deben existir entre propietario, comprador, inquilino y proveedor en una operación inmobiliaria?",
+    fiscalidad: "Hazme un resumen de los impuestos y trámites de comprar, vender, alquilar o reformar una vivienda en Galicia, con ejemplos orientativos.",
+    documentacion: "¿Qué documentación estándar y PDFs descargables tengo para una operación de compraventa, alquiler o reforma?"
+  };
+  function setAgentMode(mode, announce) {
+    const m = mode === "legal" ? "legal" : "general";
+    if (A().setMode) A().setMode(m);
+    document.querySelectorAll("[data-agent-mode]").forEach(b => {
+      const on = b.dataset.agentMode === m;
+      b.classList.toggle("active", on);
+      b.setAttribute("aria-selected", on ? "true" : "false");
+    });
+    const card = document.querySelector(".chat-card");
+    if (card) card.classList.toggle("legal-mode", m === "legal");
+    const input = $("chatInput");
+    if (input) input.placeholder = m === "legal"
+      ? "Pregunta: ITP, arras, fianza, licencias, seguro decenal, documentos…"
+      : (I18N[LANG] || I18N.es).ph_chat;
+    if (announce) renderChips(m === "legal"
+      ? ["Impuestos de compraventa en Galicia", "Fianza y garantía del alquiler", "Licencias y garantías de reforma", "Ver documentación PDF"]
+      : defaultChips());
+  }
+  function askLegal(topic) {
+    const q = LEGAL_QUESTIONS[topic] || LEGAL_QUESTIONS.documentacion;
+    const sec = document.getElementById("agente");
+    if (sec) sec.scrollIntoView({ behavior: "smooth", block: "start" });
+    setAgentMode("legal", true);
+    setTimeout(() => sendChat(q), 420);
+  }
+
   /* ---------- init ---------- */
   let speechEnabled = false;
   async function init() {
@@ -629,6 +668,9 @@
     applyLang();
     $("langSelect").value = LANG;
     $("langSelect").onchange = e => { LANG = e.target.value; applyLang(); };
+    document.querySelectorAll("[data-agent-mode]").forEach(b => { b.onclick = () => setAgentMode(b.dataset.agentMode, true); });
+    document.querySelectorAll("[data-legal-ask]").forEach(b => { b.onclick = () => askLegal(b.dataset.legalAsk); });
+    setAgentMode("general", false);
     renderProps();
     renderCRM();
     renderZoneGrid();
@@ -637,7 +679,7 @@
     if (prof.name) bubble("De vuelta, " + prof.name + ". Retomamos por donde lo dejamos — di “¿qué recuerdas de mí?” para el repaso.", "bot");
     else bubble("Te presento tu agente de Milano Vigo. Pregúntame por tasación, pisos, gastos en Galicia o reformas — o dime directamente lo que buscas.", "bot");
     updateMemory({ profile: prof, score: prof.score || 0, scoreLabel: prof.score >= 70 ? "HOT · lead caliente" : prof.score >= 45 ? "WARM · tibio" : "COLD · aún frío", actions: [] });
-    $("resetChat").onclick = async () => { A().reset(); $("chatLog").innerHTML = ""; $("memList").innerHTML = ""; $("scoreVal").textContent = "—"; $("scoreBar").style.width = "0%"; renderChips(["Busco piso para comprar", "Quiero vender mi piso", "¿Cuánto valdría mi piso?"]); toast("Memoria borrada"); };
+    $("resetChat").onclick = async () => { A().reset(); setAgentMode("general", false); $("chatLog").innerHTML = ""; $("memList").innerHTML = ""; $("scoreVal").textContent = "—"; $("scoreBar").style.width = "0%"; renderChips(defaultChips()); toast("Memoria borrada"); };
     $("voiceToggle").onclick = () => setVoicePref(voicePref === "off" ? "f" : "off");
     $("voiceFemale").onclick = () => setVoicePref("f");
     $("voiceMale").onclick = () => setVoicePref("m");

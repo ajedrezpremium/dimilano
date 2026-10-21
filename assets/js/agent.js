@@ -77,6 +77,38 @@ window.MV_AGENT = (function () {
     return "other";
   }
 
+
+  /* ---------- legal & económico ---------- */
+  function detectLegalTopic(t) {
+    if (/documentacion|documentos?|pdf|checklist|plantilla|modelo de contrato/.test(t)) return "documentacion";
+    if (/impuesto|iva\b|irpf|itp\b|ajd\b|plusvalia|fiscal|hacienda|deduccion/.test(t)) return "fiscalidad";
+    if (/fianza|alquiler|alquilar|arrendamiento|lau\b|inquilino|casero|renta mensual|garantia adicional/.test(t)) return "alquiler";
+    if (/arras|notaria|notario|registro de la propiedad|escritura|nota simple|cargas|compraventa|comprar vivienda|vender vivienda/.test(t)) return "compraventa";
+    if (/reforma|licencia|seguro decenal|loe\b|arquitecto|aparejador|habitabilidad|certificado energetico|contrato de obra/.test(t)) return "reforma";
+    if (/garantia|aval|proveedor|seguro de responsabilidad|incumplimiento|penalizacion/.test(t)) return "garantias";
+    if (/legal|abogado|juridico|asesoria|normativa|ley\b/.test(t)) return "general";
+    return null;
+  }
+  function legalDocs(ids) {
+    const L = window.MV_LEGAL;
+    if (!L) return "";
+    return (ids || []).map(id => (L.DOCS.find(d => d.id === id) || {}).title).filter(Boolean).join(" · ");
+  }
+  function legalAnswer(topic) {
+    const L = window.MV_LEGAL;
+    if (!L) return "No tengo cargada la base legal en este momento.";
+    if (topic === "documentacion" || topic === "general") {
+      return "⚖️ Asesoría legal y económica de Di Milano\nPuedo orientarte sobre compraventa, alquiler, reforma, fiscalidad y garantías entre propietario, cliente y proveedor.\n\n📄 Documentación descargable:\n" + L.DOCS.map(d => "· " + d.title + " — " + d.desc).join("\n") + "\n\nDime tu caso (comprar, vender, alquilar o reformar) y te digo qué revisar, qué coste orientativo tiene y qué documento te conviene.\n\n⚠️ " + L.DISCLAIMER;
+    }
+    const T = L.TOPICS[topic];
+    if (!T) return "Puedo ayudarte con compraventa, alquiler, reforma, fiscalidad y garantías. ¿Sobre cuál quieres que profundice?";
+    const docs = legalDocs(T.docs);
+    return T.icon + " " + T.title + "\n" + T.intro + "\n\n" + T.bullets.map(b => "• " + b).join("\n") + (docs ? "\n\n📄 Documentos: " + docs + " (descargables en la sección Legal)." : "") + "\n\n⚠️ " + L.DISCLAIMER;
+  }
+  function legalChips() {
+    return ["Impuestos de compraventa en Galicia", "Fianza y garantía del alquiler", "Licencias y garantías de reforma", "Ver documentación PDF"];
+  }
+
   /* ---------- memoria ---------- */
   function blankProfile() {
     return { name:null, role:null, budget_max:null, rooms:null, zones:[], timeline:null, motive:null,
@@ -84,6 +116,7 @@ window.MV_AGENT = (function () {
              score:0, lang:"es", lead:S().blankLead() };
   }
   let P = blankProfile();
+  let MODE = "general";
 
   function reScore() {
     let s = 0;
@@ -191,6 +224,13 @@ window.MV_AGENT = (function () {
     const zs = parseZones(t), cond = parseCondition(t);
     const wantsElevator = /con ascensor/.test(t) ? true : null;
     const intent = detectIntent(t);
+    const legalTopic = detectLegalTopic(t);
+    if ((MODE === "legal" || legalTopic) && !(intent === "renov" && /cuanto cuesta|estimar|coste de reforma/.test(t))) {
+      if (legalTopic) add(legalAnswer(legalTopic));
+      else add(legalAnswer("general"));
+      add("", { chips: legalChips() });
+      return finish(replies, actions, t);
+    }
 
     if (/invierto|inversor|rentar|alquilar para|yield|cap rate/.test(t)) P.role = "inversor";
     if (intent === "rent" && P.role !== "vendedor") P.role = P.role || "inquilino";
@@ -348,9 +388,11 @@ window.MV_AGENT = (function () {
     if (!P.lead) P.lead = S().blankLead();
     return P;
   }
-  function reset() { S().resetConversation(); P = blankProfile(); return P; }
+  function reset() { S().resetConversation(); P = blankProfile(); MODE = "general"; return P; }
   const profile = () => ({ ...P });
   const lang = l => { P.lang = l; S().saveProfile(P); };
 
-  return { init, respond, reset, profile, match, valuate, reformCost, nextSlots, reScore, scoreLabel, setLang: lang };
+  function setMode(m) { MODE = m === "legal" ? "legal" : "general"; return MODE; }
+  function getMode() { return MODE; }
+  return { init, respond, reset, profile, match, valuate, reformCost, nextSlots, reScore, scoreLabel, setLang: lang, setMode, getMode, legalTopic: detectLegalTopic };
 })();

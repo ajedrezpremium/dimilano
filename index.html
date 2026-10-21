@@ -29,6 +29,7 @@
     </a>
     <nav class="nav-links">
       <a href="#agente" data-i18n="nav_agent">Agente IA</a>
+      <a href="#legal">Legal &amp; económico</a>
       <a href="#propiedades" data-i18n="nav_props">Propiedades</a>
       <a href="#tasacion" data-i18n="nav_tas">Tasación</a>
       <a href="#mercado" data-i18n="nav_merc">Mercado</a>
@@ -103,6 +104,10 @@
             <button id="resetChat" class="icon-btn" title="Borrar memoria" aria-label="Reiniciar" data-i18n-t="t_reset">↺</button>
           </div>
         </div>
+        <div class="chat-modebar" id="chatModebar" role="tablist" aria-label="Modo del agente">
+          <button type="button" class="mode-btn active" data-agent-mode="general" role="tab" aria-selected="true">Agente general</button>
+          <button type="button" class="mode-btn" data-agent-mode="legal" role="tab" aria-selected="false">⚖️ Legal &amp; económico <span class="mode-new">NUEVO</span></button>
+        </div>
         <div id="chatLog" class="chat-log"></div>
         <div id="chips" class="chip-list"></div>
         <form id="chatForm" class="chat-input-row">
@@ -130,11 +135,106 @@
   </div>
 </section>
 
+<!-- LEGAL & ECONÓMICO -->
+<section id="legal" class="section legal-section">
+  <div class="wrap">
+    <div class="sec-head legal-head">
+      <span class="kicker">02 · Legal &amp; económico</span>
+      <h2>Decisiones con criterio, no con letra pequeña.</h2>
+      <p class="sec-sub">El agente Milano incorpora una capa de asesoramiento legal y económico para que compradores, vendedores, inquilinos y proveedores entiendan sus obligaciones, impuestos y garantías antes de firmar. Información general + documentación estándar + derivación a profesionales cuando el caso lo exige.</p>
+      <div class="legal-trust">
+        <span>✓ Intermediación independiente</span>
+        <span>✓ Legislación estatal y gallega</span>
+        <span>✓ Documentos PDF descargables</span>
+        <span>✓ Sin conflicto de interés oculto</span>
+      </div>
+    </div>
+    <div class="legal-grid">
+      <article class="legal-card">
+        <div class="legal-card-top"><span class="legal-icon">⚖️</span><span class="legal-tag">ITP · arras · notaría</span></div>
+        <h3>Compraventa</h3>
+        <p>Compra o vende con las cargas, impuestos y plazos bajo control.</p>
+        <ul>
+          <li>ITP 8 % en Galicia · 7 % vivienda habitual</li>
+          <li>Notaría, registro, plusvalía e IRPF</li>
+          <li>Arras, condición de hipoteca y cargas</li>
+        </ul>
+        <div class="legal-actions">
+          <button type="button" class="btn btn-gold btn-sm" data-legal-ask="compraventa">Consultar al agente</button>
+          <a class="legal-doc-link" href="docs/checklist-compraventa.pdf" download>Checklist PDF ↓</a>
+        </div>
+      </article>
+      <article class="legal-card">
+        <div class="legal-card-top"><span class="legal-icon">🔑</span><span class="legal-tag">LAU · fianza · garantía</span></div>
+        <h3>Alquiler</h3>
+        <p>Fija una relación clara entre propietario e inquilino desde el primer día.</p>
+        <ul>
+          <li>Fianza 1 mes + garantía máx. 2 meses</li>
+          <li>Duración 5 años (7 si es sociedad)</li>
+          <li>Actualización de renta e IRPF del propietario</li>
+        </ul>
+        <div class="legal-actions">
+          <button type="button" class="btn btn-gold btn-sm" data-legal-ask="alquiler">Consultar al agente</button>
+          <a class="legal-doc-link" href="docs/checklist-alquiler.pdf" download>Checklist PDF ↓</a>
+        </div>
+      </article>
+      <article class="legal-card">
+        <div class="legal-card-top"><span class="legal-icon">🛠️</span><span class="legal-tag">LOE · licencias · seguros</span></div>
+        <h3>Reforma y obra</h3>
+        <p>Presupuesto, contrato y garantías para que la obra no te sorprenda.</p>
+        <ul>
+          <li>Licencia o declaración responsable</li>
+          <li>Garantías LOE: 10, 3 y 1 año</li>
+          <li>IVA 10 % / 21 % y seguro de responsabilidad</li>
+        </ul>
+        <div class="legal-actions">
+          <button type="button" class="btn btn-gold btn-sm" data-legal-ask="reforma">Consultar al agente</button>
+          <a class="legal-doc-link" href="docs/checklist-reforma.pdf" download>Checklist PDF ↓</a>
+        </div>
+      </article>
+      <article class="legal-card">
+        <div class="legal-card-top"><span class="legal-icon">🛡️</span><span class="legal-tag">Propietario · cliente · proveedor</span></div>
+        <h3>Garantías de las partes</h3>
+        <p>Equilibrio y trazabilidad: cada parte sabe qué aporta y qué recibe.</p>
+        <ul>
+          <li>Títulos, cargas, solvencia y seguros</li>
+          <li>Arras, fianzas, avales e hitos de pago</li>
+          <li>Intermediación independiente y honorarios claros</li>
+        </ul>
+        <div class="legal-actions">
+          <button type="button" class="btn btn-gold btn-sm" data-legal-ask="garantias">Consultar al agente</button>
+          <a class="legal-doc-link" href="docs/hoja-encargo-venta.pdf" download>Hoja de encargo ↓</a>
+        </div>
+      </article>
+    </div>
+    <div class="legal-docs">
+      <div class="legal-docs-head">
+        <div>
+          <span class="kicker">Documentación estándar</span>
+          <h3>Consulta y descarga antes de firmar.</h3>
+          <p class="muted">Plantillas y checklists orientativos. Para un caso concreto, el agente te indica qué profesional necesitas.</p>
+        </div>
+        <button type="button" class="btn btn-ghost btn-sm" data-legal-ask="documentacion">¿Cuál necesito? Preguntar →</button>
+      </div>
+      <div class="doc-grid">
+        <a class="doc-card" href="docs/guia-fiscal-operaciones.pdf" download><span class="doc-ico">PDF</span><span><b>Guía fiscal</b><small>ITP, IVA, AJD, plusvalía e IRPF</small></span><span class="doc-dl">↓</span></a>
+        <a class="doc-card" href="docs/checklist-compraventa.pdf" download><span class="doc-ico">PDF</span><span><b>Checklist compraventa</b><small>Cargas, arras, notaría y gastos</small></span><span class="doc-dl">↓</span></a>
+        <a class="doc-card" href="docs/checklist-alquiler.pdf" download><span class="doc-ico">PDF</span><span><b>Checklist alquiler</b><small>Fianza, garantía y obligaciones</small></span><span class="doc-dl">↓</span></a>
+        <a class="doc-card" href="docs/checklist-reforma.pdf" download><span class="doc-ico">PDF</span><span><b>Checklist reforma</b><small>Licencias, seguros y LOE</small></span><span class="doc-dl">↓</span></a>
+        <a class="doc-card" href="docs/modelo-arras.pdf" download><span class="doc-ico">PDF</span><span><b>Modelo de arras</b><small>Plantilla con cláusulas y firma</small></span><span class="doc-dl">↓</span></a>
+        <a class="doc-card" href="docs/modelo-presupuesto-obra.pdf" download><span class="doc-ico">PDF</span><span><b>Presupuesto de obra</b><small>Capítulos, IVA y pagos</small></span><span class="doc-dl">↓</span></a>
+        <a class="doc-card" href="docs/hoja-encargo-venta.pdf" download><span class="doc-ico">PDF</span><span><b>Hoja de encargo</b><small>Intermediación y honorarios</small></span><span class="doc-dl">↓</span></a>
+      </div>
+    </div>
+    <p class="legal-disclaimer"><b>Nota legal:</b> Di Milano no es un despacho de abogados ni una asesoría fiscal. La información es general y orientativa (España/Galicia, 2026) y no sustituye un dictamen individual. Para un caso concreto, te derivamos a profesionales colegiados. Las cifras no son una tasación pericial.</p>
+  </div>
+</section>
+
 <!-- PROPIEDADES Búsqueda conversacional Zillow-style -->
 <section id="propiedades" class="section alt">
   <div class="wrap">
     <div class="sec-head">
-      <span class="kicker" data-i18n="sec2_k">02 · Búsqueda conversacional</span>
+      <span class="kicker" data-i18n="sec2_k">03 · Búsqueda conversacional</span>
       <h2 data-i18n="sec2_h">Busca en lenguaje natural, no con filtros.</h2>
       <p class="sec-sub" data-i18n="sec2_sub">Zillow-style: escribe lo que quieres y el motor lo analiza, filtra y explica por qué te encaja cada inmueble.</p>
     </div>
@@ -152,7 +252,7 @@
 <section id="tasacion" class="section">
   <div class="wrap">
     <div class="sec-head">
-      <span class="kicker" data-i18n="sec3_k">03 · Tasación instantánea + reformas</span>
+      <span class="kicker" data-i18n="sec3_k">04 · Tasación instantánea + reformas</span>
       <h2 data-i18n="sec3_h">¿Cuánto vale tu piso? ¿Y su techo reformado?</h2>
       <p class="sec-sub" data-i18n="sec3_sub">Valoración por barrio con rango de confianza y, como Zillow AI Mode, coste estimado de tu reforma antes de llamar a nadie.</p>
     </div>
@@ -202,7 +302,7 @@
 <section id="mercado" class="section alt">
   <div class="wrap">
     <div class="sec-head">
-      <span class="kicker" data-i18n="sec4_k">04 · Radar de mercado</span>
+      <span class="kicker" data-i18n="sec4_k">05 · Radar de mercado</span>
       <h2 data-i18n="sec4_h">Vigo por barrios: precio, alquiler y tendencia.</h2>
       <p class="sec-sub" data-i18n="sec4_sub">Estimaciones orientativas por zona: la IA no inventa cifras exactas — las acota y avisa antes de que inviertas.</p>
     </div>
@@ -214,7 +314,7 @@
 <section id="servicios" class="section">
   <div class="wrap">
     <div class="sec-head">
-      <span class="kicker" data-i18n="sec5_k">05 · Un agente, tres cerebros</span>
+      <span class="kicker" data-i18n="sec5_k">06 · Un agente, tres cerebros</span>
       <h2 data-i18n="sec5_h">Técnico. Comercial. Administrativo.</h2>
     </div>
     <div class="roles-grid">
@@ -253,7 +353,7 @@
 <section id="crm" class="section alt">
   <div class="wrap">
     <div class="sec-head">
-      <span class="kicker" data-i18n="sec6_k">06 · CRM administrativo</span>
+      <span class="kicker" data-i18n="sec6_k">07 · CRM administrativo</span>
       <h2 data-i18n="sec6_h">Todo lo que el agente conversa, acaba en el pipeline.</h2>
       <p class="sec-sub" data-i18n="sec6_sub">Demo local en v1.0 (localStorage); al conectar Supabase, cada conversación escribe directamente en tu base de datos.</p>
       <span class="pill" data-i18n="crm_mode" id="dbMode">Modo demo · localStorage</span>
@@ -283,25 +383,27 @@
 </section>
 
 <footer class="footer">
+  <div class="wrap footer-cta">
+    <div class="footer-cta-copy">
+      <span class="footer-kicker">Intermediación independiente · Vigo · Ría de Pontevedra</span>
+      <h3>Decisiones inmobiliarias con respaldo legal y económico.</h3>
+      <p>Compra, vende, alquila o reforma con un agente que entiende de números, documentos y garantías. Equilibramos los intereses de propietarios, clientes y proveedores.</p>
+    </div>
+    <div class="footer-cta-actions">
+      <a class="btn btn-gold" href="#legal">Abrir asesor legal</a>
+      <a class="btn btn-ghost" href="https://wa.me/34986909010?text=Hola%2C%20quiero%20asesoramiento%20legal%20y%20econ%C3%B3mico%20sobre%20una%20operaci%C3%B3n%20inmobiliaria." target="_blank" rel="noopener">Hablar por WhatsApp</a>
+    </div>
+  </div>
   <div class="wrap footer-grid">
     <div class="footer-brand">
       <a class="brand" href="#inicio">
-        <img class="footer-logo" src="https://www.dimilano.es/img/logo%20Di%20Milano.svg" alt="Di Milano"
-             onerror="this.outerHTML='<span class=&quot;brand-mark&quot;>DM</span><span class=&quot;brand-text&quot;>DI MILANO<b>VIGO</b></span>'">
+        <span class="brand-mark">DM</span><span class="brand-text">DI MILANO<b>VIGO</b></span>
       </a>
       <p class="muted" data-i18n="foot_msg">Tu constructora e inmobiliaria en Vigo de confianza, te acompañamos para hacer de tus proyectos una realidad.</p>
-      <div class="footer-contact">
-        <div class="footer-sede">
-          <span><b>Constructora</b> · Rúa García Olloqui 8, 36201 Vigo</span>
-          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=R%C3%BAa+Garc%C3%ADa+Olloqui+8%2C+36201+Vigo" target="_blank" rel="noopener">📍 Cómo llegar</a>
-        </div>
-        <div class="footer-sede">
-          <span><b>Inmobiliaria</b> · Praza de Compostela 32, 36201 Vigo</span>
-          <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Praza+de+Compostela+32%2C+36201+Vigo" target="_blank" rel="noopener">📍 Cómo llegar</a>
-        </div>
-        <a href="https://www.dimilano.es/contacto">info@dimilano.es</a>
-        <button type="button" class="map-toggle" data-map="https://maps.google.com/maps?q=R%C3%BAa+Garc%C3%ADa+Olloqui+8,+36201+Vigo&output=embed">🗺 Ver mapa</button>
-        <div class="map-embed" hidden></div>
+      <div class="footer-badges">
+        <span class="footer-badge">Intermediación independiente</span>
+        <span class="footer-badge">Vigo · Galicia</span>
+        <span class="footer-badge">Agente 24/7</span>
       </div>
       <div class="footer-rrss">
         <a class="share-btn" href="https://www.instagram.com/dimilanovigo/" target="_blank" rel="noopener" title="Instagram">◎</a>
@@ -312,30 +414,52 @@
       </div>
     </div>
     <div class="footer-col">
-      <b data-i18n="f_menu">Menú</b>
-      <a href="https://www.dimilano.es/nuestros_pisos" data-i18n="f_tienda">Tienda</a>
-      <a href="https://www.dimilano.es/constructora" data-i18n="f_serv">Servicios</a>
-      <a href="https://www.dimilano.es/nosotros" data-i18n="f_nos">Sobre nosotros</a>
-      <a href="https://www.dimilano.es/contacto" data-i18n="f_contacta">Contacta</a>
+      <b>Servicios</b>
+      <a href="https://www.dimilano.es/constructora">Constructora</a>
+      <a href="https://www.dimilano.es/inmobiliaria">Inmobiliaria</a>
+      <a href="https://www.dimilano.es/proyectos">Portafolio</a>
+      <a href="https://www.dimilano.es/valorador">Valora tu inmueble</a>
+      <a href="https://www.dimilano.es/nuestros_pisos">Viviendas disponibles</a>
     </div>
-    <div class="footer-col">
-      <b data-i18n="f_services">Servicios</b>
-      <a href="https://www.dimilano.es/constructora" data-i18n="f_cons">Constructora</a>
-      <a href="https://www.dimilano.es/inmobiliaria" data-i18n="f_inmo">Inmobiliaria</a>
-      <a href="https://www.dimilano.es/proyectos" data-i18n="f_port">Portafolio</a>
-      <a href="https://www.dimilano.es/valorador" data-i18n="f_valor">Valora tu inmueble</a>
+    <div class="footer-col footer-col-legal">
+      <b>Legal &amp; económico</b>
+      <a href="#legal">Asesoría legal y económica</a>
+      <a href="docs/guia-fiscal-operaciones.pdf" download>Guía fiscal 2026</a>
+      <a href="docs/checklist-compraventa.pdf" download>Checklist compraventa</a>
+      <a href="docs/checklist-alquiler.pdf" download>Checklist alquiler</a>
+      <a href="docs/checklist-reforma.pdf" download>Checklist reforma</a>
+      <a href="docs/modelo-arras.pdf" download>Modelo de arras</a>
+    </div>
+    <div class="footer-col footer-contact-col">
+      <b>Contacto</b>
+      <div class="footer-sede">
+        <span><b>Constructora</b> · Rúa García Olloqui 8, 36201 Vigo</span>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=R%C3%BAa+Garc%C3%ADa+Olloqui+8%2C+36201+Vigo" target="_blank" rel="noopener">Cómo llegar ↗</a>
+      </div>
+      <div class="footer-sede">
+        <span><b>Inmobiliaria</b> · Praza de Compostela 32, 36201 Vigo</span>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Praza+de+Compostela+32%2C+36201+Vigo" target="_blank" rel="noopener">Cómo llegar ↗</a>
+      </div>
+      <a href="tel:+34986909010">986 90 90 10</a>
+      <a href="mailto:info@dimilano.es">info@dimilano.es</a>
+      <a href="mailto:inmobiliaria@dimilano.es">inmobiliaria@dimilano.es</a>
+      <span class="footer-hours">Atención con cita previa · L–V</span>
+      <button type="button" class="map-toggle" data-map="https://maps.google.com/maps?q=R%C3%BAa+Garc%C3%ADa+Olloqui+8,+36201+Vigo&output=embed">Ver mapa</button>
+      <div class="map-embed" hidden></div>
     </div>
     <div class="footer-col">
       <b>Legal</b>
       <a href="https://www.dimilano.es/politica_privacidad" data-i18n="f_priv">Política de privacidad</a>
       <a href="https://www.dimilano.es/aviso_legal" data-i18n="f_legal">Aviso legal</a>
-      <a href="https://www.dimilano.es/condiciones_contratacion" data-i18n="f_term">Términos y condiciones de uso</a>
+      <a href="https://www.dimilano.es/condiciones_contratacion" data-i18n="f_term">Términos y condiciones</a>
       <a href="https://www.dimilano.es/politica_cookies" data-i18n="f_cookies">Política de cookies</a>
+      <a href="#legal">Nota legal y alcance</a>
     </div>
   </div>
-  <div class="wrap footer-legal muted">
-    <span data-i18n="foot5">© 2026 Di Milano · Todas las cifras de este sitio son estimaciones orientativas del agente IA, no tasación pericial.</span>
-    <span data-i18n="foot3">Agente IA v1.0 · GitHub + Vercel + Supabase, 100 % plan gratuito</span>
+  <div class="wrap footer-bottom">
+    <span>© 2026 Di Milano · Vigo · Todas las cifras del agente son estimaciones orientativas, no tasación pericial.</span>
+    <span class="footer-disclaimer">Di Milano actúa como intermediario independiente. No presta servicios de abogacía ni asesoría fiscal; coordina con profesionales colegiados cuando la operación lo requiere.</span>
+    <a href="#inicio" class="footer-top">Volver arriba ↑</a>
   </div>
 </footer>
 
@@ -363,6 +487,7 @@
 <script src="assets/js/config.js" defer></script>
 <script src="assets/js/data.js" defer></script>
 <script src="assets/js/supabase-client.js" defer></script>
+<script src="assets/js/legal.js" defer></script>
 <script src="assets/js/agent.js" defer></script>
 <script src="assets/js/app.js" defer></script>
   <a id="waFloat" class="wa-float" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
