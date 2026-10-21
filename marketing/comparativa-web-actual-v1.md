@@ -8,6 +8,24 @@
 
 ---
 
+## 0. La realidad en 2026 (para un nerd)
+
+En construcción e inmobiliaria, lo que decide una operación sigue siendo humano: **profesionalidad, calidad, criterio y trato**. Lo que está cambiando es la forma de **captar, seleccionar y gestionar** al cliente.
+
+| Lo que no cambia | Lo que se digitaliza |
+|---|---|
+| Confianza y reputación | Captación y primera respuesta |
+| Calidad de obra y servicio | Selección y cualificación |
+| Criterio y trato personal | Seguimiento y agenda |
+| Negociación y cierre | Documentación y medición |
+
+**La idea para un nerd:** la web es la interfaz; el agente es el runtime; el CRM es la base de datos; la persona es el criterio. Si el sistema hace lo repetitivo, el equipo hace lo que solo una persona puede hacer: **generar confianza**.
+
+**High tech para lo repetitivo. High touch para lo que decide.**
+
+Infografía de apoyo: `DIMILANO V1.0 esp.jpg` (visión de plataforma PropTech; el diseño 3D/VR y la calculadora instantánea son hoja de ruta, no V1.0).
+
+---
 ## 1. Resumen ejecutivo
 
 Di Milano no necesita otra web corporativa. La web actual ya comunica bien la marca, tiene listado de inmuebles, valorador y una trayectoria sólida. Lo que falta es la **capa que convierte visitas en conversaciones, conversaciones en visitas y visitas en operaciones**.
