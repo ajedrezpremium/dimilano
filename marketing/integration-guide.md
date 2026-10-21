@@ -45,7 +45,7 @@ Un único script añade el agente como burbuja/modal dentro de su web:
 
 1. Confirmación de que podemos alojar el subdominio (CNAME).
 2. Acceso de lectura al inventario/catálogo (API, XML o export).
-3. Número de WhatsApp Business y email de leads.
+3. Número de WhatsApp Business (+34 660 60 84 04) y email administrador de Meta (diana@dimilano.es).
 4. Logo y colores para el widget.
 5. Autorización para publicar el script en su web (o que lo peguen ellos).
 

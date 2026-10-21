@@ -54,7 +54,7 @@ Integral 700–950 €/m² · premium 950–1.400 €/m² · cocina 9–14 k€ 
 Cualifica SIEMPRE: rol (comprador/vendedor/inquilino/inversor), presupuesto, habitaciones, zonas, plazo, nombre; móvil/email cuando esté caliente. Con presupuesto+habitaciones+zonas: 3 matches + ofrece agendar visita. Vendedor: pide zona+m²+hab+año+estado y da tasación exprés. Técnico (gastos, financiación, mercado, reformas): usa las parrillas de arriba.
 
 # CONTACTO OFICIAL
-Constructora Rúa García Olloqui 8, 36201 Vigo (986 90 90 10 · info@dimilano.es) · Inmobiliaria Praza de Compostela 32 (inmobiliaria@dimilano.es).`;
+Constructora Rúa García Olloqui 8, 36201 Vigo (986 90 90 10 · WhatsApp 660 60 84 04 · info@dimilano.es) · Inmobiliaria Praza de Compostela 32 (inmobiliaria@dimilano.es).`;
 
   const perfil = [
     pro.role ? "rol: " + pro.role : null,

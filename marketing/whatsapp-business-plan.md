@@ -1,5 +1,33 @@
 # WhatsApp Business — plan de integración (DIMILANO)
 
+## Datos confirmados (21/10/2026)
+
+- **Número WhatsApp Business:** +34 660 60 84 04. En enlaces `wa.me`: `34660608404`. En la API: formato E.164 `+34660608404`.
+- **Email administrador de Meta:** diana@dimilano.es. Debe ser un buzón real y accesible; recomendable que sea alias corporativo (`whatsapp@dimilano.es`) para no depender de una persona.
+- **Fijo de oficina:** 986 90 90 10. No es el número de la API; se mantiene como contacto general.
+- **Requisito crítico:** el número de la API no puede estar activo a la vez en WhatsApp personal o WhatsApp Business app. Si ya tiene WhatsApp, hay que migrarlo o liberarlo antes de conectarlo a Cloud API.
+
+## Checklist de alta en Meta
+
+- [ ] Portfolio de Meta Business creado y verificado (nombre legal, CIF, dirección, web y dominio).
+- [ ] Cuenta de WhatsApp Business (WABA) creada.
+- [ ] App de Meta con producto WhatsApp; usuario del sistema y token permanente.
+- [ ] Número +34 660 60 84 04 verificado por SMS/llamada y dado de alta en la WABA.
+- [ ] Nombre visible aprobado: “Di Milano” o “Di Milano Vigo”.
+- [ ] Webhook: `https://dimilano-vigo.vercel.app/api/whatsapp/webhook`.
+- [ ] Variables en Vercel: `WHATSAPP_TOKEN`, `WHATSAPP_PHONE_NUMBER_ID`, `WHATSAPP_BUSINESS_ACCOUNT_ID`, `WHATSAPP_VERIFY_TOKEN`, `META_APP_SECRET`.
+- [ ] Firma `X-Hub-Signature-256` validada en el webhook.
+- [ ] Método de pago de Meta configurado (la API no es gratuita como WhatsApp personal).
+- [ ] Política de privacidad, opt-in y base jurídica publicados.
+- [ ] Plantillas aprobadas: confirmación de visita, recordatorio 24 h, recordatorio 2 h, tasación lista y seguimiento post-visita.
+- [ ] Prueba de extremo a extremo: mensaje entrante → agente → respuesta → registro en CRM.
+
+## Plazos y costes
+
+- Alta y verificación: 3–7 días laborables si la documentación está lista.
+- Aprobación de plantillas: 24–48 h.
+- Coste: por conversación/plantilla según tarifa de Meta para España; un BSP puede añadir cuota mensual. No es el WhatsApp Business gratuito.
+
 ## Estado actual (implementado)
 - Botón flotante de WhatsApp en la web.
 - CTA por inmueble: “WhatsApp” con mensaje que incluye título, precio y zona.

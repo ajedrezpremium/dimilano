@@ -255,7 +255,7 @@ window.MV_AGENT = (function () {
     }
     if (intent === "contact") {
       const B = window.MV_BRAND || {};
-      add("Constructora: Rúa García Olloqui 8, 36201 Vigo · " + (B.telDisplay || "986 90 90 10") + " · " + (B.emailGeneral || "info@dimilano.es") + "\nInmobiliaria: Praza de Compostela 32, 36201 Vigo · " + (B.emailInmo || "inmobiliaria@dimilano.es") + "\nYo me encargo del resto: cualifícate aquí y mi equipo te llama.");
+      add("Constructora: Rúa García Olloqui 8, 36201 Vigo · " + (B.telDisplay || "986 90 90 10") + " · WhatsApp " + (B.whatsappDisplay || "660 60 84 04") + " · " + (B.emailGeneral || "info@dimilano.es") + "\nInmobiliaria: Praza de Compostela 32, 36201 Vigo · " + (B.emailInmo || "inmobiliaria@dimilano.es") + "\nYo me encargo del resto: cualifícate aquí y mi equipo te llama.");
       actions.push({ type: "contact", tel: B.telRaw || "+34986909010", email: B.emailInmo || "inmobiliaria@dimilano.es", site: B.site || "https://www.dimilano.es/contacto" });
       add("", { chips: ["Busco piso para comprar", "Quiero vender mi piso"] });
       return finish(replies, actions, t);
