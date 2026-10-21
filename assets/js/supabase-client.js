@@ -43,12 +43,17 @@ window.MV_STORE = (function () {
       if (i >= 0) local[i] = lead; else local.unshift(lead);
       jset(LS.L, local.slice(0, 50));
       if (client) try {
-        const row = { id: lead.id, name: lead.name, role: lead.role, budget_max: lead.budget_max, rooms: lead.rooms, zones: lead.zones, phone: lead.phone, email: lead.email, stage: lead.stage, score: lead.score, next_action: lead.next_action, lang: lead.lang };
-        const { error } = await client.from("mv_leads").upsert(row, { onConflict: "id" });
-        if (error && /^4250|row-level security|permission/i.test(String(error.message || "") + (error.code || ""))) {
-          const { error: e2 } = await client.from("mv_leads").insert(row);
-          if (e2 && e2.code !== "23505") console.warn("[MV] lead", e2.message); // 23505 = ya guardado
-        } else if (error) console.warn("[MV] lead", error.message);
+        const fields = { name: lead.name, role: lead.role, budget_max: lead.budget_max, rooms: lead.rooms, zones: lead.zones, phone: lead.phone, email: lead.email, stage: lead.stage, score: lead.score, next_action: lead.next_action, lang: lead.lang };
+        if (i >= 0) { // ya guardado anteriormente por este navegador: actualizar directo
+          const { error: eu } = await client.from("mv_leads").update(fields).eq("id", lead.id);
+          if (eu) console.warn("[MV] lead upd", eu.message);
+        } else {
+          const { error } = await client.from("mv_leads").insert({ id: lead.id, ...fields });
+          if (error && error.code === "23505") { // de otra visita anterior: actualizar sin duplicar
+            const { error: e3 } = await client.from("mv_leads").update(fields).eq("id", lead.id);
+            if (e3) console.warn("[MV] lead upd", e3.message);
+          } else if (error) console.warn("[MV] lead", error.message);
+        }
       } catch (e) { /* offline */ }
       return lead;
     },
