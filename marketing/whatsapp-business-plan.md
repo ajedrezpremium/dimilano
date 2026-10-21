@@ -5,6 +5,7 @@
 - **Número WhatsApp Business:** +34 660 60 84 04. En enlaces `wa.me`: `34660608404`. En la API: formato E.164 `+34660608404`.
 - **Email administrador de Meta:** diana@dimilano.es. Debe ser un buzón real y accesible; recomendable que sea alias corporativo (`whatsapp@dimilano.es`) para no depender de una persona.
 - **Fijo de oficina:** 986 90 90 10. No es el número de la API; se mantiene como contacto general.
+- **Contacto cliente:** Diana Fernández, asesora ejecutiva · diana@dimilano.es.
 - **Requisito crítico:** el número de la API no puede estar activo a la vez en WhatsApp personal o WhatsApp Business app. Si ya tiene WhatsApp, hay que migrarlo o liberarlo antes de conectarlo a Cloud API.
 
 ## Checklist de alta en Meta

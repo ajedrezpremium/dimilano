@@ -1,6 +1,6 @@
 # Di Milano · 10 funciones Pro V1.0 + 10 funciones V2.0
 
-**Preparado para:** Dirección de Di Milano (Constructora e Inmobiliaria, Vigo)
+**Preparado para:** Diana Fernández, asesora ejecutiva · Di Milano (Constructora e Inmobiliaria, Vigo)
 **Fecha:** Octubre 2026
 **Demo operativa:** https://dimilano-vigo.vercel.app
 **Dossier visual:** DIMILANO_FUNCIONES_PRO_V1_V2.pdf
